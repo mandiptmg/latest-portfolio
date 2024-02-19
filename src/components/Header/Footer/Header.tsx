@@ -8,6 +8,7 @@ import { FaMoon, FaSun } from 'react-icons/fa'
 import { RiMenu3Fill } from 'react-icons/ri'
 import { useGlobalContext } from '@/context/context'
 import MenuItem from './MenuItem'
+import Link from 'next/link'
 const Header = () => {
   const { setMenu, menu } = useGlobalContext()
   return (
@@ -27,9 +28,9 @@ const Header = () => {
       <div className='hidden md:inline-flex items-center gap-7'>
         {headerData.map((item: headerProps) => (
           <div key={item.id}>
-            <h1 className='px-1 cursor-pointer hover:text-[#1F618D] font-medium capitalize hover:bg-slate-200  '>
+           <Link href={item.link}> <h1 className='px-1 cursor-pointer hover:text-[#1F618D] font-medium capitalize hover:bg-slate-200  '>
               {item.title}
-            </h1>
+            </h1></Link>
           </div>
         ))}
       </div>

@@ -34,12 +34,14 @@ const Footer = () => {
                 </div>
               ))}
             </div>
-            <div className='flex items-center gap-4'>
+            <div className='flex flex-wrap items-center gap-4'>
               {headerData.map((item: headerProps) => (
                 <div key={item.id}>
-                  <h1 className='capitalize text-sm sm:text-base cursor-pointer font-medium'>
-                    {item.title}
-                  </h1>
+                  <Link href={item.link}>
+                    <h1 className='capitalize text-sm sm:text-base cursor-pointer font-medium'>
+                      {item.title}
+                    </h1>
+                  </Link>
                 </div>
               ))}
             </div>

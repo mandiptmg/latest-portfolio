@@ -1,40 +1,55 @@
 import { CiHome } from 'react-icons/ci'
 import { BsPersonVcard } from 'react-icons/bs'
+import { IoLogoJavascript } from 'react-icons/io5'
+import { TbBrandNextjs } from 'react-icons/tb'
 import { IoIosContact } from 'react-icons/io'
-import { FaProjectDiagram } from 'react-icons/fa'
+import { SiTypescript, SiTailwindcss, SiFramer, SiRedux } from 'react-icons/si'
+import {
+  FaProjectDiagram,
+  FaFacebookSquare,
+  FaInstagram,
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+  FaReact,
+  FaHtml5,
+  FaCss3,
+  FaGitAlt,
+} from 'react-icons/fa'
+// import { MdMiscellaneousServices } from 'react-icons/md'
 
 export const headerData = [
   {
     title: 'home',
     id: 1,
     icon: CiHome,
+    link: '/',
   },
   {
     title: 'about',
-
     id: 2,
     icon: BsPersonVcard,
+    link: '/about',
   },
+  // {
+  //   title: 'service',
+  //   id: 3,
+  //   icon: MdMiscellaneousServices,
+  //   link: '/service',
+  // },
   {
     title: 'portfolio',
-
-    id: 3,
+    id: 4,
     icon: FaProjectDiagram,
+    link: '/portfolio',
   },
   {
     title: 'contact',
-    id: 4,
+    id: 5,
     icon: IoIosContact,
+    link: '/contact',
   },
 ]
-
-import {
-  FaFacebookSquare,
-  FaInstagram,
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
-} from 'react-icons/fa'
 
 export const iconData = [
   {
@@ -66,5 +81,128 @@ export const iconData = [
     id: 5,
     icon: FaTwitter,
     link: 'https://twitter.com/mandiptamang77',
+  },
+]
+
+export const portfolioItems = [
+  {
+    id: 1,
+    title: 'React',
+    icon: FaReact,
+    description: 'Built a dynamic web application using React.',
+  },
+  {
+    id: 2,
+    title: 'HTML5',
+    icon: FaHtml5,
+    description: 'Designed and coded a responsive website using HTML5.',
+  },
+  {
+    id: 3,
+    title: 'CSS3',
+    icon: FaCss3,
+    description: 'Styled web pages with CSS3 for improved visual presentation.',
+  },
+  {
+    id: 4,
+    title: 'JavaScript',
+    icon: IoLogoJavascript,
+    description: 'Implemented interactive features using JavaScript.',
+  },
+  {
+    id: 5,
+    title: 'Next.js',
+    icon: TbBrandNextjs,
+    description: 'Developed a Next.js application for server-side rendering.',
+  },
+  {
+    id: 6,
+    title: 'TypeScript',
+    icon: SiTypescript,
+    description: 'Utilized TypeScript for type-safe JavaScript development.',
+  },
+  {
+    id: 7,
+    title: 'Tailwind CSS',
+    icon: SiTailwindcss,
+    description:
+      'Styled components with Tailwind CSS for rapid UI development.',
+  },
+  {
+    id: 8,
+    title: 'Framer Motion',
+    icon: SiFramer,
+    description: 'Created animations and interactive UIs with Framer Motion.',
+  },
+  {
+    id: 9,
+    title: 'Redux Toolkit',
+    icon: SiRedux,
+    description: 'Managed application state with Redux Toolkit.',
+  },
+  {
+    id: 10,
+    title: 'Git',
+    icon: FaGitAlt,
+    description: 'Utilized version control with Git for project management.',
+  },
+  {
+    id: 11,
+    title: 'GitHub',
+    icon: FaGithub,
+    description: 'Collaborated on projects and hosted repositories on GitHub.',
+  },
+]
+
+import amazon from './../public/project/amazon.png'
+import gym from './../public/project/himalayanFit.png'
+import journey from './../public/project/journey.png'
+import falcon from './../public/project/falcon.png'
+import furniVorgue from './../public/project/furniVorgue.png'
+import refract from './../public/project/refract.png'
+import moai from './../public/project/moai.png'
+
+export const projectData = [
+  {
+    id: 1,
+    title: 'amazon clone',
+    img: amazon,
+    link: 'https://next-amazon-beta.vercel.app',
+  },
+  {
+    id: 2,
+    title: 'himalayanFitness gym',
+    img: gym,
+    link: 'https://himalayan-gym.vercel.app',
+  },
+  {
+    id: 3,
+    title: 'journey',
+    img: journey,
+    link: 'https://journey-travel.vercel.app',
+  },
+  {
+    id: 4,
+    title: 'falcon company',
+    img: falcon,
+    link: 'https://falcon-car.vercel.app',
+  },
+  {
+    id: 5,
+    title: 'furniVorgue',
+    img: furniVorgue,
+    link: 'https://furniVorgue.vercel.app',
+  },
+  {
+    id: 6,
+    title: 'Refract',
+    img: refract,
+    link: 'https://refract-coral.vercel.app/',
+  },
+  {
+    id: 7,
+    title: 'Moai',
+    img: moai,
+    link: 'https://moai-six.vercel.app/',
   },
 ]

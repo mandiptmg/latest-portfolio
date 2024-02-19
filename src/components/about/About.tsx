@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import about from '../../../public/about.jpg'
 import { FaDownload } from 'react-icons/fa'
@@ -17,8 +18,8 @@ const About = () => {
             />
           </div>
         </div>
-        <div className='space-y-2'>
-          <h1 className='font-bold md:text-2xl text-xl color1  color uppercase'>
+        <div className='space-y-3'>
+          <h1 className='font-bold md:text-2xl text-xl color1 uppercase'>
             about me
           </h1>
           <p className='dark:text-gray-200 text-sm md:text-base text-gray-500'>
@@ -66,7 +67,12 @@ const About = () => {
               </tbody>
             </table>
           </div>
-          <button className='px-5 py-2 font-medium bg-[#1F618D] mt-7 text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] flex items-center gap-1'>
+          <button
+            onClick={() =>
+              window.open('https://drive.google.com/file/d/1dw-XIinbBwSHvBkUXudVddQ2O72FZrWW/view?usp=drive_link')
+            }
+            className='px-5 py-2 font-medium bg-[#1F618D] text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] flex items-center gap-1'
+          >
             <FaDownload className='text-xl sm:text-2xl ' />{' '}
             <span className='text-base md:text-lg font-semibold'>
               Download CV
