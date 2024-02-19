@@ -2,14 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.color{
- @apply text-[#101720]
+.color {
+  @apply text-[#101720];
 }
 
-.color1{
- @apply text-[#1F618D]
+.color1 {
+  @apply text-[#1F618D];
 }
-.darkcolor{
- @applay text-[#F4F6F7 ]
+.darkcolor {
+  @applay text-[#F4F6F7 ];
+}
+
+.shadow1 {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }

@@ -8,7 +8,7 @@ const service = () => {
         <h1 className='font-bold md:text-2xl text-xl color1 uppercase'>
           my services
         </h1>
-        <div className='grid mt-12 md:grid-cols-3 gap-4 '>
+        <div className='grid mt-12 md:grid-cols-3 grid-cols-2 gap-4 '>
           {portfolioItems.map((item: portfolioProps) => (
             <div
               key={item.id}
@@ -20,7 +20,9 @@ const service = () => {
               <h1 className='font-semibold text-lg colo1 md:text-xl '>
                 {item.title}
               </h1>
-              <p className=' md:text-base text-gray-500 dark:text-gray-200 text-sm'>{item.description}</p>
+              <p className=' md:text-base text-gray-500 dark:text-gray-200 text-sm'>
+                {item.description}
+              </p>
             </div>
           ))}
         </div>
