@@ -37,7 +37,7 @@ const Page = () => {
                   Front End Developer
                 </h1>
                 <p className='text-sm sm:text-base text-gray-500'>
-                  I'm a passionate frontend developer, crafting immersive
+                  I am a passionate frontend developer, crafting immersive
                   digital experiences. Each project blends technical skills with
                   a love for design.
                 </p>

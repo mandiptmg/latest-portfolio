@@ -26,7 +26,7 @@ const AboutPage = () => {
               Interested for a project?
             </h1>
             <p className=' text-lg md:text-xl'>
-              Excited about a new front-end project opportunity? Let's
+              Excited about a new front-end project opportunity? Lets
               collaborate and bring your ideas to life.
             </p>
             <button className=' bg-black px-3 py-2 my-3 flex items-start justify-start rounded-md cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#1F618D] before:to-[#1F618D]/70 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-md hover:before:left-0 text-[#fff] flex-col text-semibold text-base'>
