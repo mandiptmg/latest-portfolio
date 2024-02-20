@@ -4,12 +4,12 @@ const Contact = () => {
     <div className='w-[90vw] mx-auto py-20'>
       <div className='text-center'>
         <h1 className='font-bold md:text-2xl text-xl color1'>
-          Let's create awesome products!
+          Lets create awesome products!
         </h1>
         <div className='mt-12  max-w-2xl mx-auto'>
           <p className='color dark:text-white text-base md:text-lg '>
             I am always open to discussing your project, improving your online
-            presence, or helping with Your website's design and converting
+            presence, or helping with Your websites design and converting
             challenges.
           </p>
           <Link href='/contact'>
