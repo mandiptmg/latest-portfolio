@@ -39,7 +39,7 @@ const ContactForm = () => {
       <form
         action='https://getform.io/f/014c7187-b8e7-405c-9ddd-21ac63fe7610'
         method='POST'
-        className='w-full text-left mx-auto'
+        className='w-full text-left dark:text-black mx-auto'
         onSubmit={handleSubmit}
       >
         <div className='mb-6'>
