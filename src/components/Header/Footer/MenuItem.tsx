@@ -9,12 +9,12 @@ const MenuItem = () => {
   const { setMenu } = useGlobalContext()
 
   return (
-    <div className='fixed w-full color z-10 overflow-hidden h-screen bg-black/60 top-0 right-0 '>
+    <div className='fixed w-full color z-10 overflow-hidden h-screen  bg-black/60 top-0 right-0 '>
       <motion.div
         initial={{ x: '500', opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ ease: 'easeIn', duration: 0.7 }}
-        className='absolute top-0 right-0 h-screen  w-1/2 bg-white'
+        className='absolute top-0 right-0 h-screen dark:text-white w-1/2 dark:bg-[#0f152c] bg-white'
       >
         <button
           onClick={() => setMenu(false)}
@@ -24,7 +24,7 @@ const MenuItem = () => {
         </button>
         <div className=' mt-20  flex-col flex items-center '>
           {headerData.map((item: headerProps) => (
-            <div key={item.id} className='hover:bg-gray-100 group w-full'>
+            <div key={item.id} className='hover:bg-gray-100 dark:hover:bg-gray-700 group w-full'>
               <Link href={item.link}>
                 <h1
                   onClick={() => setMenu(false)}
