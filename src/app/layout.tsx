@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' className=' overflow-x-hidden'>
-      <body className={`${inter.className} dark:text-white dark:bg-[#0f152c] `}>
+      <body
+        className={`${inter.className} bg-gray-100 dark:text-white dark:bg-[#0f152c] `}
+      >
         <Provider>
           <Header />
           {children}

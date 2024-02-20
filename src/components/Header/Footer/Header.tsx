@@ -9,33 +9,43 @@ import { RiMenu3Fill } from 'react-icons/ri'
 import { useGlobalContext } from '@/context/context'
 import MenuItem from './MenuItem'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 const Header = () => {
-  const { setMenu, menu, dark, setDark } = useGlobalContext()
+  const pathname = usePathname()
+  const { setMenu, menu, dark, setDark, scroll } = useGlobalContext()
   const toggleDarkMode = () => {
     const newDarkMode = !dark
     localStorage.setItem('darkMode', String(newDarkMode))
     setDark(newDarkMode)
   }
   return (
-    <div className='h-20 relative w-full dark:darkcolor dark:text-white color flex justify-between items-center px-1 md:px-7'>
-      <div className='flex items-center'>
-        <Image
-          src={dark ? logowhite : logoblack}
-          alt='logo'
-          width={90}
-          height={90}
-          className='aspect-auto object-contain'
-        />
-        <h1>
-          Mandip | <span className='font-semibold color1'>Developer</span>
-        </h1>
-      </div>
+    <div
+      className={`${scroll} h-20 sticky top-0 left-0 w-full color dark:text-white color flex justify-between items-center z-40  bgsticky px-1 md:px-7`}
+    >
+      <Link href='/'>
+        <div className='flex items-center'>
+          <Image
+            src={dark ? logowhite : logoblack}
+            alt='logo'
+            width={90}
+            height={90}
+            className='aspect-auto object-contain'
+          />
+          <h1>
+            Mandip | <span className='font-semibold color1'>Developer</span>
+          </h1>
+        </div>
+      </Link>
       <div className='hidden md:inline-flex items-center gap-7'>
         {headerData.map((item: headerProps) => (
           <div key={item.id}>
             <Link href={item.link}>
               {' '}
-              <h1 className='px-1 cursor-pointer hover:text-[#1F618D] font-medium capitalize hover:bg-slate-200  '>
+              <h1
+                className={`px-1 cursor-pointer hover:text-[#1F618D] font-medium capitalize hover:bg-slate-200 ${
+                  pathname === item.link ? 'text-[#1F618D] bg-gray-200' : 'none'
+                }  `}
+              >
                 {item.title}
               </h1>
             </Link>
