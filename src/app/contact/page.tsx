@@ -16,10 +16,10 @@ const Page = () => {
       <div className='py-20 w-[90vw] mx-auto'>
         <div className='text-center'>
           <h1 className='text-3xl md:text-6xl color1 text-left font-medium'>
-            <span className='color'>Lets Get in</span> Touch!
+            <span className='color dark:text-white'>Lets Get in</span> Touch!
           </h1>{' '}
           <div className='mt-20 grid gap-4 md:grid-cols-[1fr,2fr]'>
-            <div className='w-full h-full grid place-items-center p-4 rounded bg-gray-200'>
+            <div className='w-full h-full grid place-items-center p-4 rounded bg-gray-200 dark:bg-gray-700'>
               <Image
                 src={contact}
                 alt='contact'
@@ -28,20 +28,20 @@ const Page = () => {
                 className='w-full aspect-[4/2] mx-auto rounded-md object-cover h-full '
               />
               <div className='text-left space-y-2 mt-4'>
-                <h1 className='text-lg tracking-widest md:text-xl  color font-bold'>
+                <h1 className='text-lg tracking-widest md:text-xl dark:text-white color font-bold'>
                   {' '}
                   Mandip Tamang
                 </h1>
-                <h1 className='font-medium text-gray-500'>
+                <h1 className='font-medium text-gray-500 dark:text-gray-200'>
                   {' '}
                   Front End Developer
                 </h1>
-                <p className='text-sm sm:text-base text-gray-500'>
+                <p className='text-sm sm:text-base text-gray-500 dark:text-gray-200'>
                   I am a passionate frontend developer, crafting immersive
                   digital experiences. Each project blends technical skills with
                   a love for design.
                 </p>
-                <h1 className='uppercase color text-base font-light'>
+                <h1 className='uppercase color text-base font-light dark:text-white'>
                   find me in
                 </h1>
                 <div className='flex gap-2 w-full items-center'>
@@ -57,7 +57,7 @@ const Page = () => {
                     </div>
                   ))}
                 </div>
-                <table className='text-sm sm:text-base text-gray-500'>
+                <table className='text-sm sm:text-base dark:text-gray-200 text-gray-500'>
                   <tbody>
                     <tr>
                       <td>Phone:</td>
@@ -72,7 +72,7 @@ const Page = () => {
               </div>
             </div>
             <div
-              className='w-full p-4 rounded bg-gray-200
+              className='w-full p-4 rounded bg-gray-200 dark:bg-gray-700
           '
             >
               <ContactForm />

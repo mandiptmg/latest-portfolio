@@ -45,7 +45,7 @@ const ContactForm = () => {
         <div className='mb-6'>
           <label
             htmlFor='full-name'
-            className='block text-gray-700 font-semibold'
+            className='block text-gray-700 dark:text-gray-200 font-semibold'
           >
             Full Name
           </label>
@@ -60,7 +60,7 @@ const ContactForm = () => {
           />
         </div>
         <div className='mb-6'>
-          <label htmlFor='email' className='block text-gray-700 font-semibold'>
+          <label htmlFor='email' className='block text-gray-700 dark:text-gray-200 font-semibold'>
             Email Address
           </label>
           <input
@@ -76,7 +76,7 @@ const ContactForm = () => {
         <div className='mb-6'>
           <label
             htmlFor='message'
-            className='block text-gray-700 font-semibold'
+            className='block text-gray-700 dark:text-gray-200 font-semibold'
           >
             Message
           </label>
