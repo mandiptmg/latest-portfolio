@@ -26,7 +26,10 @@ const MenuItem = () => {
           {headerData.map((item: headerProps) => (
             <div key={item.id} className='hover:bg-gray-100 group w-full'>
               <Link href={item.link}>
-                <h1 className='p-4 flex items-center cursor-pointer font-medium w-full  capitalize gap-2'>
+                <h1
+                  onClick={() => setMenu(false)}
+                  className='p-4 flex items-center cursor-pointer font-medium w-full  capitalize gap-2'
+                >
                   <span className='text-xl font-semibold  group-hover:text-[#1F618D] '>
                     {item.icon && <item.icon />}
                   </span>

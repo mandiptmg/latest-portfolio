@@ -1,10 +1,29 @@
 // import logoblack from './../../../../public/logo-black.png'
+'use client'
 import logoWhite from './../../../../public/logo-white.png'
 import { headerData, iconData } from '../../../../data/data'
 import { headerProps, iconProps } from '../../../../types/type'
 import Link from 'next/link'
 import Image from 'next/image'
+import { FaArrowUp } from 'react-icons/fa'
+import { useEffect } from 'react'
 const Footer = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const lookElement = document.querySelector<Element>('.look')
+      if (!lookElement) return
+
+      if (window.scrollY === 0) {
+        lookElement.classList.add('hidden')
+      } else {
+        lookElement.classList.remove('hidden')
+      }
+    }
+
+    handleScroll()
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
   const time = new Date().getFullYear()
   return (
     <div className='pt-4 bg-black/90  w-full'>
@@ -54,6 +73,12 @@ const Footer = () => {
           <span className='font-thin'>MANDIP TAMANG</span>
         </p>
       </div>
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className='cursor-pointer look  bg-gray-800  px-3 py-2 rounded-md text-white tracking-wider shadow-xl animate-bounce text-sm md:text-xl fixed bottom-5 duration-700 hover:animate-none hover:scale-[1.1] right-2'
+      >
+        <FaArrowUp />
+      </button>
     </div>
   )
 }

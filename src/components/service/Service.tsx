@@ -1,14 +1,24 @@
+'use client'
 import { portfolioItems } from '../../../data/data'
 import { portfolioProps } from '../../../types/type'
-
-const service = () => {
+import { usePathname } from 'next/navigation'
+const Service = () => {
+  const pathname = usePathname()
   return (
     <div className='py-20 w-[90vw] mx-auto'>
       <div className='text-center'>
-        <h1 className='font-bold md:text-2xl text-xl color1 uppercase'>
+        <h1
+          className={`${
+            pathname === '/about' ? 'hidden' : 'none'
+          } font-bold md:text-2xl text-xl color1 uppercase`}
+        >
           my services
         </h1>
-        <div className='grid mt-12 md:grid-cols-3 grid-cols-2 gap-4 '>
+        <div
+          className={`grid  md:grid-cols-3 grid-cols-2 gap-4 ${
+            pathname === '/about' ? 'mt-5' : 'mt-12'
+          }`}
+        >
           {portfolioItems.map((item: portfolioProps) => (
             <div
               key={item.id}
@@ -31,4 +41,4 @@ const service = () => {
   )
 }
 
-export default service
+export default Service
