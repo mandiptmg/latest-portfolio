@@ -2,7 +2,7 @@ import about from '../../../public/about1.jpg'
 import Image from 'next/image'
 import Service from '../../components/service/Service'
 import About from '../../components/about/About'
-
+import Link from 'next/link'
 const AboutPage = () => {
   return (
     <div>
@@ -28,12 +28,15 @@ const AboutPage = () => {
               Excited about a new front-end project opportunity? Lets
               collaborate and bring your ideas to life.
             </p>
-            <button className=' group bg-black px-3 py-2 my-3 flex items-start justify-start rounded-md cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#1F618D] before:to-[#1F618D]/70 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-md hover:before:left-0 text-[#fff] dark:bg-[#474F7A]  flex-col text-semibold text-base'>
-              Got a new project?
-              <span className='text-sm block font-sans group-hover:underline'>
-                contact me for a brief
-              </span>
-            </button>
+
+            <Link href='/contact'>
+              <button className='group bg-black px-3 py-2 my-3 inline-flex items-start justify-start rounded-md cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#1F618D] before:to-[#1F618D]/70 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-md hover:before:left-0 text-[#fff] dark:bg-[#474F7A]  flex-col font-semibold text-base'>
+                Got a new project?
+                <span className='text-sm font-thin  font-[Playfair Display] group-hover:underline'>
+                  contact me for a brief
+                </span>
+              </button>
+            </Link>
           </div>
           <div className='max-w-2xl mx-auto'>
             <Image
