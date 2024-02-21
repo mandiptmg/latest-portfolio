@@ -7,12 +7,14 @@ import Contact from '@/components/contact/Contact'
 export default function Home() {
   return (
     <main>
-      <Hero />
-      <About />
-      <Service />
-      <Project />
-      <hr className='my-7' />
-      <Contact />
+      
+        <Hero />
+        <About />
+        <Service />
+        <Project />
+        <hr className='my-7' />
+        <Contact />
+
     </main>
   )
 }

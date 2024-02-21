@@ -7,6 +7,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { FaArrowUp } from 'react-icons/fa'
 import { useEffect } from 'react'
+
 const Footer = () => {
   useEffect(() => {
     const handleScroll = () => {
@@ -23,19 +24,20 @@ const Footer = () => {
     handleScroll()
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  })
   const time = new Date().getFullYear()
   return (
     <div className='pt-4 bg-black/90  w-full'>
       <div className='grid items-center  grid-cols-12'>
         <div className='col-span-4 grid place-items-center'>
-          <Image
+         <Link href='/'> <Image
             src={logoWhite}
             width={200}
             height={200}
-            className='aspect-square object-contain'
+            className='aspect-square inline-flex object-contain'
             alt='log'
           />
+          </Link>
         </div>
         <div className='text-center grid md:place-items-center place-items-start col-span-8 text-gray-400'>
           <div className='space-y-4'>

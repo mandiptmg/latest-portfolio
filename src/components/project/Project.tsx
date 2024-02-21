@@ -9,13 +9,14 @@ const Project = () => {
   return (
     <div className='py-20 w-[90vw] mx-auto'>
       <div className='text-center'>
-        <h1 className='font-bold capitalize md:text-2xl text-xl color1'>
+        <h1 data-aos='fade-up' className='font-bold capitalize md:text-2xl text-xl color1'>
           my Recent project
         </h1>
         <div className='mt-12 grid gap-10 lg:grid-cols-3 md:grid-cols-2 '>
           {projectData.slice(0, 6).map((item: projectProps) => (
             <div
-              key={item.id}
+              key={item.id}  data-aos='zoom-in-down'
+              data-delay={200 * item.id}
               onClick={() => window.open(`${item.link}`)}
               className='w-full group hover:scale-[1.04] duration-700 relative cursor-pointer '
             >

@@ -1,11 +1,13 @@
 'use client'
+import { useGlobalContext } from '@/context/context'
 import hero from '../../../public/hero.png'
 import Image from 'next/image'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 const Hero = () => {
+  const {dark} = useGlobalContext()
   return (
     <div className='w-[90vw]   py-8 gap-4 md:gap-0  mx-auto flex items-center flex-col-reverse  md:grid md:grid-cols-2'>
-      <div className='grid place-items-center'>
+      <div data-aos='fade-up' className='grid place-items-center'>
         <div>
           <h5 className='text-base md:text-lg lg:text-xl dark:text-white color font-normal'>
             Hi! I am Mandip, a
@@ -39,11 +41,11 @@ const Hero = () => {
         </div>
       </div>
       <div className=' w-full grid mx-auto place-items-center  h-full'>
-        <div className='relative md:h-[70%]'>
+        <div data-aos='fade-left' className='relative md:h-[70%]'>
           <Image
             src={hero}
             alt='logo'
-            className=' w-full h-full   object-contain '
+            className={`${dark ? 'grayscale': 'none'} w-full h-full    object-contain `}
           />
           {/* <div className='bg-gradient-to-b from-white/10 via-white/70 absolute bottom-20 left-0 to-white/90 w-full h-16'></div> */}
           <div

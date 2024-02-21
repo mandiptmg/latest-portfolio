@@ -37,6 +37,7 @@ const ContactForm = () => {
   return (
     <div>
       <form
+        data-aos='fade-left'
         action='https://getform.io/f/014c7187-b8e7-405c-9ddd-21ac63fe7610'
         method='POST'
         className='w-full text-left dark:text-black mx-auto'
@@ -60,7 +61,10 @@ const ContactForm = () => {
           />
         </div>
         <div className='mb-6'>
-          <label htmlFor='email' className='block text-gray-700 dark:text-gray-200 font-semibold'>
+          <label
+            htmlFor='email'
+            className='block text-gray-700 dark:text-gray-200 font-semibold'
+          >
             Email Address
           </label>
           <input

@@ -24,7 +24,7 @@ const MenuItem = () => {
         </button>
         <div className=' mt-20  flex-col flex items-center '>
           {headerData.map((item: headerProps) => (
-            <div key={item.id} className='hover:bg-gray-100 dark:hover:bg-gray-700 group w-full'>
+            <div data-aos="fade-up"  data-delay={300 * item.id} key={item.id} className='hover:bg-gray-100 dark:hover:bg-gray-700 group w-full'>
               <Link href={item.link}>
                 <h1
                   onClick={() => setMenu(false)}

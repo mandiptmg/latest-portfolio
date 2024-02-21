@@ -10,6 +10,7 @@ import { useGlobalContext } from '@/context/context'
 import MenuItem from './MenuItem'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+// import { motion } from 'framer-motion'
 const Header = () => {
   const pathname = usePathname()
   const { setMenu, menu, dark, setDark, scroll } = useGlobalContext()
@@ -20,10 +21,18 @@ const Header = () => {
   }
   return (
     <div
-      className={`${scroll} h-20 sticky top-0 left-0 w-full color dark:text-white color flex justify-between items-center z-40  bgsticky px-1 md:px-7`}
+      className={`${scroll} h-20 sticky top-0 left-0 w-full color dark:text-white color flex justify-between items-center z-40 transition bgsticky px-1 md:px-7`}
     >
       <Link href='/'>
-        <div className='flex items-center'>
+        <div
+          // initial={{ opacity: 0, scale: 0 }}
+          // animate={{ opacity: 1, scale: 1 }}
+          // transition={{
+          //   duration: 1,
+          //   ease: 'easeInOut', // Example easing function
+          // }}
+          className='flex items-center'
+        >
           <Image
             src={dark ? logowhite : logoblack}
             alt='logo'

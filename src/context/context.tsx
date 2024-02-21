@@ -1,14 +1,14 @@
 'use client'
 import { createContext, useContext, useEffect, useState } from 'react'
-
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 interface AppContextType {
   menu: boolean
   setMenu: React.Dispatch<React.SetStateAction<boolean>>
   dark: boolean
   setDark: React.Dispatch<React.SetStateAction<boolean>>
-  scroll:string
+  scroll: string
   setScroll: React.Dispatch<React.SetStateAction<string>>
-
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined)
@@ -18,8 +18,14 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
   const [dark, setDark] = useState(false)
   const [scroll, setScroll] = useState('')
 
-
   useEffect(() => {
+    AOS.init({
+      // Global settings:
+      offset: 200, // offset (in px) from the original trigger point
+      delay: 0.25, // values from 0 to 3000, with step 50ms
+      duration: 1000, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+    })
     const handlerDark = () => {
       const darkMode = localStorage.getItem('darkMode')
       const isDarkMode = darkMode === 'true'
@@ -33,11 +39,11 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
     handlerDark()
 
     const handlerStickey = () => {
-     if (window.scrollY > 50) {
-       setScroll('bg-gray-100 dark:bg-[#0f152c] shadow-xl')
-     } else {
-       setScroll('')
-     }
+      if (window.scrollY > 50) {
+        setScroll('bg-gray-100 dark:bg-[#0f152c] shadow-xl')
+      } else {
+        setScroll('')
+      }
     }
     // Call the handlerStickey function initially and add the scroll event listener
     handlerStickey()
@@ -55,9 +61,11 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
       window.removeEventListener('resize', handlerWidth)
       window.removeEventListener('scroll', handlerStickey)
     }
-  })
+  }, [])
   return (
-    <AppContext.Provider value={{ menu, setMenu, dark, setDark, scroll , setScroll }}>
+    <AppContext.Provider
+      value={{ menu, setMenu, dark, setDark, scroll, setScroll }}
+    >
       {children}
     </AppContext.Provider>
   )

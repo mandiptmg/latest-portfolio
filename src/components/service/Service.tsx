@@ -8,6 +8,7 @@ const Service = () => {
     <div className='py-20 w-[90vw] mx-auto'>
       <div className='text-center'>
         <h1
+          data-aos='fade-up'
           className={`${
             pathname === '/about' ? 'hidden' : 'none'
           } font-bold md:text-2xl text-xl color1 uppercase`}
@@ -21,6 +22,8 @@ const Service = () => {
         >
           {portfolioItems.map((item: portfolioProps) => (
             <div
+              data-aos='zoom-in-down'
+              data-delay={200 * item.id}
               key={item.id}
               className='grid space-y-2 place-items-center border dark:border-gray-700 rounded-lg p-4'
             >

@@ -15,12 +15,17 @@ const Project = () => {
       </div>
       <div className='py-20 w-[90vw] mx-auto'>
         <div className='text-center'>
-          <h1 className='text-3xl md:text-6xl color capitalize dark:text-white text-left font-medium'>
+          <h1
+            data-aos='fade-right'
+            className='text-3xl md:text-6xl color capitalize dark:text-white text-left font-medium'
+          >
             my Recent <span className='color1'>project</span>
           </h1>
           <div className='mt-20 grid gap-10 lg:grid-cols-3 md:grid-cols-2 '>
             {projectData.map((item: projectProps) => (
               <div
+                data-aos='zoom-in-down'
+                data-delay={200 * item.id}
                 key={item.id}
                 onClick={() => window.open(`${item.link}`)}
                 className='w-full group hover:scale-[1.04] duration-700 relative cursor-pointer '

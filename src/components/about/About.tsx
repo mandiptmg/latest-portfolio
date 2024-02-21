@@ -8,8 +8,13 @@ const About = () => {
       <div className='md:grid grid-cols-2 flex gap-8 md:gap-0 flex-col md:flex-row justify-between items-center'>
         <div className='grid place-items-center'>
           <div className='relative'>
-            <div className='w-[50%] -z-10 absolute left-0 -bottom-6 h-[115%] bg-[#1F618D]/50'></div>
+            <div
+              data-aos='fade-right'
+              className='w-[50%] -z-10 absolute left-0 -bottom-6 h-[115%] bg-[#1F618D]/50'
+            ></div>
             <Image
+              data-aos='fade-right'
+              data-delay={1}
               src={about}
               width={500}
               height={500}
@@ -18,7 +23,7 @@ const About = () => {
             />
           </div>
         </div>
-        <div className='space-y-3'>
+        <div data-aos='fade-up' className='space-y-3'>
           <h1 className='font-bold md:text-2xl text-xl color1 uppercase'>
             about me
           </h1>
@@ -69,7 +74,9 @@ const About = () => {
           </div>
           <button
             onClick={() =>
-              window.open('https://drive.google.com/file/d/1dw-XIinbBwSHvBkUXudVddQ2O72FZrWW/view?usp=drive_link')
+              window.open(
+                'https://drive.google.com/file/d/1dw-XIinbBwSHvBkUXudVddQ2O72FZrWW/view?usp=drive_link'
+              )
             }
             className='px-5 py-2 font-medium bg-[#1F618D] text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] flex items-center gap-1'
           >
