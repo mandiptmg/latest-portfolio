@@ -1,5 +1,5 @@
 'use client'
-// import Link from 'next/link'
+import Link from 'next/link'
 import { projectData } from '../../../data/data'
 import { projectProps } from '../../../types/type'
 import Image from 'next/image'
@@ -9,13 +9,17 @@ const Project = () => {
   return (
     <div className='py-20 w-[90vw] mx-auto'>
       <div className='text-center'>
-        <h1 data-aos='fade-up' className='font-bold capitalize md:text-2xl text-xl color1'>
+        <h1
+          data-aos='fade-up'
+          className='font-bold capitalize md:text-2xl text-xl color1'
+        >
           my Recent project
         </h1>
         <div className='mt-12 grid gap-10 lg:grid-cols-3 md:grid-cols-2 '>
           {projectData.slice(0, 6).map((item: projectProps) => (
             <div
-              key={item.id}  data-aos='zoom-in-down'
+              key={item.id}
+              data-aos='zoom-in-down'
               data-delay={200 * item.id}
               onClick={() => window.open(`${item.link}`)}
               className='w-full group hover:scale-[1.04] duration-700 relative cursor-pointer '
@@ -36,6 +40,20 @@ const Project = () => {
             </div>
           ))}
         </div>
+        <Link href='/portfolio'>
+          <button
+            data-aos='fade-up'
+            className='inline-flex mt-10 uppercase font-semibold bg-[#1f618d] text-sm shadow-xl hover:scale-[1.1] text-white  duration-700 md:text-base items-center gap-2 px-4 py-2 rounded'
+          >
+            see more{' '}
+            <span
+              className='loader border-t-2  rounded-full border-yellow-500 bg-yellow-300 animate-spin
+aspect-square w-6 flex justify-center items-center text-yellow-700'
+            >
+              😎
+            </span>
+          </button>
+        </Link>
       </div>
     </div>
   )

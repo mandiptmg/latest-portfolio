@@ -22,19 +22,18 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
     AOS.init({
       // Global settings:
       offset: 200, // offset (in px) from the original trigger point
-      delay: 0.25, // values from 0 to 3000, with step 50ms
+      delay: 100, // values from 0 to 3000, with step 50ms
       duration: 1000, // values from 0 to 3000, with step 50ms
       easing: 'ease', // default easing for AOS animations
     })
+
     const handlerDark = () => {
-      const darkMode = localStorage.getItem('darkMode')
-      const isDarkMode = darkMode === 'true'
-      if (isDarkMode) {
-        document.documentElement.classList.add('dark')
+      const storedValue = localStorage.getItem('dark-mode')
+      if (storedValue === 'true') {
+        setDark(true)
       } else {
-        document.documentElement.classList.remove('dark')
+        setDark(false)
       }
-      setDark(isDarkMode)
     }
     handlerDark()
 
