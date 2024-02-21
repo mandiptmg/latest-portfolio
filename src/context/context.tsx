@@ -30,6 +30,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
     const handlerDark = () => {
       const storedValue = localStorage.getItem('dark-mode')
       if (storedValue === 'true') {
+        document.documentElement.classList.add('dark')
         setDark(true)
       } else {
         setDark(false)
