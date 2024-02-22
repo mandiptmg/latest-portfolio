@@ -206,7 +206,7 @@ export const projectData = [
     id: 5,
     title: 'furniVorgue',
     img: furniVorgue,
-    link: 'https://furniVorgue.vercel.app',
+    link: 'https://furniVogue.vercel.app',
   },
   {
     id: 6,
