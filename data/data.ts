@@ -223,7 +223,7 @@ export const projectData = [
    {
     id: 8,
     title: 'portfolio',
-    img: moai,
+    img: portfolio,
     link: 'https://mandiptamang1.vercel.app/',
   },
   
