@@ -1,12 +1,9 @@
 import { useState } from 'react'
-import { BiMessageAltCheck } from 'react-icons/bi'
+// import { BiMessageAltCheck } from 'react-icons/bi'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 const ContactForm = () => {
-  // const [fullName, setFullName] = useState('')
-  // const [email, setEmail] = useState('')
-  // const [message, setMessage] = useState('')
   const [user, setUser] = useState({
     fullName: '',
     email: '',
@@ -68,7 +65,8 @@ const ContactForm = () => {
 
   return (
     <div>
-      <form onSubmit={handlerSubmit}
+      <form
+        onSubmit={handlerSubmit}
         data-aos='fade-left'
         method='POST'
         className='w-full text-left dark:text-black mx-auto'

@@ -174,6 +174,8 @@ import falcon from './../public/project/falcon.png'
 import furniVorgue from './../public/project/furniVorgue.png'
 import refract from './../public/project/refract.png'
 import moai from './../public/project/moai.png'
+import portfolio from './../public/project/portfolio.png'
+
 
 export const projectData = [
   {
@@ -218,4 +220,11 @@ export const projectData = [
     img: moai,
     link: 'https://moai-six.vercel.app/',
   },
+   {
+    id: 8,
+    title: 'portfolio',
+    img: moai,
+    link: 'https://mandiptamang1.vercel.app/',
+  },
+  
 ]
