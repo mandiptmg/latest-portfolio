@@ -18,10 +18,10 @@ const Header = () => {
     setDark(!dark)
                 if (dark === true) {
                   document.documentElement.classList.remove('dark')
-                  localStorage.setItem('dark-mode', String('true')) //setitem(key,value)
+                  localStorage.setItem('dark-mode', String(!dark)) //setitem(key,value)
                 } else {
                   document.documentElement.classList.add('dark')
-                  localStorage.setItem('dark-mode', String('false'))
+                  localStorage.setItem('dark-mode', String(!dark))
                 }
               }
   return (
