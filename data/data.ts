@@ -3,7 +3,13 @@ import { BsPersonVcard } from 'react-icons/bs'
 import { IoLogoJavascript } from 'react-icons/io5'
 import { TbBrandNextjs } from 'react-icons/tb'
 import { IoIosContact } from 'react-icons/io'
-import { SiTypescript, SiTailwindcss, SiFramer, SiRedux } from 'react-icons/si'
+import {
+  SiTypescript,
+  SiTailwindcss,
+  SiFramer,
+  SiRedux,
+  SiFirebase,
+} from 'react-icons/si'
 import {
   FaProjectDiagram,
   FaFacebookSquare,
@@ -151,6 +157,13 @@ export const portfolioItems = [
     title: 'GitHub',
     icon: FaGithub,
     description: 'Collaborated on projects and hosted repositories on GitHub.',
+  },
+  {
+    id: 12,
+    title: 'Firebase',
+    icon: SiFirebase,
+    description:
+      'Integrated Firebase for real-time database, auth, storage, enabling seamless dev.',
   },
 ]
 

@@ -1,14 +1,44 @@
 import { useState } from 'react'
+import { BiMessageAltCheck } from 'react-icons/bi'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 const ContactForm = () => {
-  const [fullName, setFullName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+  // const [fullName, setFullName] = useState('')
+  // const [email, setEmail] = useState('')
+  // const [message, setMessage] = useState('')
+  const [user, setUser] = useState({
+    fullName: '',
+    email: '',
+    message: '',
+  })
+  let id, value
+  const handlerChange = (e: React.FormEvent) => {
+    id = (e.target as HTMLInputElement).id
+    value = (e.target as HTMLInputElement).value
+    setUser({
+      ...user,
+      [id]: value,
+    })
+  }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handlerSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    const { fullName, email, message } = user
+    const res = await fetch(
+      'https://portfolio-form-1fd77-default-rtdb.firebaseio.com/portfolio-form.json',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          fullName,
+          email,
+          message,
+        }),
+      }
+    )
 
     // Form validation
     if (!fullName || !email || !message) {
@@ -29,19 +59,19 @@ const ContactForm = () => {
     })
 
     // Reset form fields after successful submission
-    setFullName('')
-    setEmail('')
-    setMessage('')
+    setUser({
+      fullName: '',
+      email: '',
+      message: '',
+    })
   }
 
   return (
     <div>
-      <form
+      <form onSubmit={handlerSubmit}
         data-aos='fade-left'
-        action='https://getform.io/f/014c7187-b8e7-405c-9ddd-21ac63fe7610'
         method='POST'
         className='w-full text-left dark:text-black mx-auto'
-        onSubmit={handleSubmit}
       >
         <div className='mb-6'>
           <label
@@ -52,11 +82,11 @@ const ContactForm = () => {
           </label>
           <input
             type='text'
-            id='full-name'
+            id='fullName'
             className='mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#1F618D] focus:outline-[#1F618D] focus:ring-[#1F618D]'
             placeholder='Enter your full name'
-            value={fullName}
-            onChange={(e) => setFullName(e.target.value)}
+            value={user.fullName}
+            onChange={handlerChange}
             required
           />
         </div>
@@ -72,8 +102,8 @@ const ContactForm = () => {
             id='email'
             className='mt-1 block p-2 w-full rounded-md border-gray-300 shadow-sm focus:border-[#1F618D] focus:outline-[#1F618D] focus:ring-[#1F618D]'
             placeholder='Enter your email address'
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            value={user.email}
+            onChange={handlerChange}
             required
           />
         </div>
@@ -89,8 +119,8 @@ const ContactForm = () => {
             className='mt-1 block w-full focus:outline-[#1F618D] rounded-md p-2 border-gray-300 shadow-sm focus:border-[#1F618D] resize-none focus:ring-[#1F618D]'
             rows={4}
             placeholder='Enter your message'
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
+            value={user.message}
+            onChange={handlerChange}
             required
           ></textarea>
         </div>
