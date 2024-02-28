@@ -23,7 +23,7 @@ const ContactForm = () => {
     e.preventDefault()
     const { fullName, email, message } = user
     const res = await fetch(
-      'https://portfolio-form-1fd77-default-rtdb.firebaseio.com/portfolio-form.json',
+      'https://getform.io/f/014c7187-b8e7-405c-9ddd-21ac63fe7610',
       {
         method: 'POST',
         headers: {
