@@ -28,13 +28,7 @@ const About = () => {
             about me
           </h1>
           <p className='dark:text-gray-200 text-sm md:text-base text-gray-500'>
-            As a junior front-end developer, I specialize in crafting dynamic,
-            visually appealing websites. Proficient in HTML, CSS, and
-            JavaScript, I create seamless user interfaces, leveraging modern
-            libraries like React and styling with Tailwind CSS. Augmented by
-            Next.js and TypeScript, I prioritize user experience, blending
-            creativity and technical expertise to bring web projects to life.
-            Explore my GitHub for more.
+           I'm a creative junior front-end developer who loves building websites that are both stunning and interactive. I'm an expert in the basics (HTML, CSS, and JavaScript), and I use them to craft user interfaces that feel smooth and effortless. Plus, I love working with modern tools like React and Tailwind CSS to make my designs pop and streamline development.  To take things a step further, I leverage powerful tools like Next.js, redux-toolkit, MongoDB, and TypeScript to build even more robust and efficient applications.  Ultimately, my goal is to create an amazing user experience – it's where creativity meets technical skill! Check out my GitHub profile to see what I've built!
           </p>
           <div>
             <table className='space-y-1'>
