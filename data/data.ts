@@ -8,7 +8,7 @@ import {
   SiTailwindcss,
   SiFramer,
   SiRedux,
-  SiFirebase,
+  SiMongodb,
 } from 'react-icons/si'
 import {
   FaProjectDiagram,
@@ -160,10 +160,10 @@ export const portfolioItems = [
   },
   {
     id: 12,
-    title: 'Firebase',
-    icon: SiFirebase,
+    title: 'Mongodb',
+    icon: SiMongodb,
     description:
-      'Integrated Firebase for real-time database, auth, storage, enabling seamless dev.',
+      'Integrated Mongodb for real-time database, auth, storage, enabling seamless dev.',
   },
 ]
 
