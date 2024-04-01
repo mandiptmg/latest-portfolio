@@ -29,9 +29,7 @@ const Hero = () => {
               <span className='text-base sm:text-lg font-semibold'>Github</span>
             </button>
             <button
-              onClick={() => window.open('https://linkedin.com/in/mandip-tamang
-
-')}
+              onClick={() => window.open('https://www.linkedin.com/in/mandip-tamang/')}
               className='px-5 py-2 font-medium bg-[#1F618D] text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] flex items-center gap-1'
             >
               <FaLinkedin className='text-xl sm:text-2xl ' />{' '}
