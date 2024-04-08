@@ -175,9 +175,15 @@ import furniVorgue from './../public/project/furniVorgue.png'
 import refract from './../public/project/refract.png'
 import moai from './../public/project/moai.png'
 import portfolio from './../public/project/portfolio.png'
-
+import snaplify from './../public/project/snaplify.png'
 
 export const projectData = [
+  {
+    id: 0,
+    title: 'Snaplify',
+    img: snaplify,
+    link: 'https://snaplify.vercel.app',
+  },
   {
     id: 1,
     title: 'amazon clone',
