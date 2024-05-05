@@ -68,7 +68,7 @@ const About = () => {
             </table>
           </div>
           <a
-            href={pdf}
+            href={'https://drive.google.com/file/d/1jNkQdODtnHKo-ffPyh9HHs5y152IoYpb/view'}
             download='mandiptamang.pdf'
              target='_blank' // Open link in a new tab
   rel='noopener noreferrer' // Security measure to prevent tab-nabbing
