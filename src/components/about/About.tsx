@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
 import about from '../../../public/about.jpg'
+import pdf from '../../../public/mandiptamang.pdf'
 import { FaDownload } from 'react-icons/fa'
 const About = () => {
   return (
@@ -67,8 +68,8 @@ const About = () => {
             </table>
           </div>
           <a
-            href='https://drive.google.com/file/d/1jNkQdODtnHKo-ffPyh9HHs5y152IoYpb/view'
-            download='pdf.file'
+            href={pdf}
+            download='mandiptamang.pdf'
              target='_blank' // Open link in a new tab
   rel='noopener noreferrer' // Security measure to prevent tab-nabbing
             className='px-5 py-2 font-medium bg-[#1F618D] text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] flex items-center gap-1'
