@@ -70,13 +70,11 @@ const About = () => {
           <a
             href={'https://drive.google.com/file/d/1jNkQdODtnHKo-ffPyh9HHs5y152IoYpb/view'}
             download='mandiptamang.pdf'
-             target='_blank' // Open link in a new tab
-  rel='noopener noreferrer' // Security measure to prevent tab-nabbing
             className='px-5 py-2 font-medium bg-[#1F618D] text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] flex items-center gap-1'
           >
             <FaDownload className='text-xl sm:text-2xl ' />{' '}
             <span className='text-base md:text-lg font-semibold'>
-              Download CV
+              Resume
             </span>
           </a>
         </div>
