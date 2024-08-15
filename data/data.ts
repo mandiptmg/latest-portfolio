@@ -170,18 +170,17 @@ export const portfolioItems = [
   {
   id: 13,
   title: 'Laravel',
-  icon: SiLaravel, // Make sure to import the SiLaravel icon from the appropriate icon library
+  icon: SiLaravel, 
   description:
     'Utilized Laravel for robust backend development, offering RESTful APIs and efficient routing.',
 },
 {
   id: 14,
   title: 'MySQL',
-  icon: SiMysql, // Make sure to import the SiMysql icon from the appropriate icon library
+  icon: SiMysql,
   description:
     'Leveraged MySQL for reliable data storage and management, ensuring optimal performance and security.',
-},
-
+}
 ]
 
 import amazon from './../public/project/amazon.png'
