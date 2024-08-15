@@ -13,12 +13,11 @@ const Hero = () => {
             Hi! I am Mandip, a
           </h5>
           <p className='text-3xl font-bold color1 md:text-3xl lg:text-5xl'>
-            Front-end Developer
+            Full stack developer
           </p>
           <p className='text-sm mt-5 dark:text-gray-200 text-gray-500'>
-            I design engaging websites with stunning visuals and user-friendly
-            interfaces. As a frontend developer, I focus on creating enjoyable
-            user experiences using modern web technologies.
+          I design and develop engaging websites with stunning visuals and seamless user experiences.
+            As a full stack developer, I integrate modern web technologies to create user-friendly interfaces and robust backends, ensuring both aesthetic appeal and functional performance.
           </p>
           <div className='flex items-center mt-5 gap-4'>
             <button
