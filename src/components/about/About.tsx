@@ -29,7 +29,7 @@ const About = () => {
             about me
           </h1>
           <p className='dark:text-gray-200 text-sm md:text-base text-gray-500'>
-         I'm a creative full stack developer with a passion for building stunning and interactive websites. I have a strong foundation in front-end technologies like HTML, CSS, and JavaScript, which I use to craft seamless user interfaces. I also work with modern tools like React and Tailwind CSS to enhance my designs and streamline development. On the backend, I'm learning Laravel and MySQL, alongside using Next.js, Redux Toolkit, MongoDB, and TypeScript to build robust and efficient applications. My goal is to create exceptional user experiences by blending creativity with technical expertise. Check out my GitHub profile to see my projects! </p>
+         I&apos;m a creative full stack developer with a passion for building stunning and interactive websites. I have a strong foundation in front-end technologies like HTML, CSS, and JavaScript, which I use to craft seamless user interfaces. I also work with modern tools like React and Tailwind CSS to enhance my designs and streamline development. On the backend, I&apos;m learning Laravel and MySQL, alongside using Next.js, Redux Toolkit, MongoDB, and TypeScript to build robust and efficient applications. My goal is to create exceptional user experiences by blending creativity with technical expertise. Check out my GitHub profile to see my projects! </p>
           <div>
             <table className='space-y-1'>
               <tbody>
