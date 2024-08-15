@@ -29,8 +29,7 @@ const About = () => {
             about me
           </h1>
           <p className='dark:text-gray-200 text-sm md:text-base text-gray-500'>
-           I&apos;m a creative junior front-end developer who loves building websites that are both stunning and interactive. I&apos;m an expert in the basics (HTML, CSS, and JavaScript), and I use them to craft user interfaces that feel smooth and effortless. Plus, I love working with modern tools like React and Tailwind CSS to make my designs pop and streamline development.  To take things a step further, I leverage powerful tools like Next.js, redux-toolkit, MongoDB, and TypeScript to build even more robust and efficient applications.  Ultimately, my goal is to create an amazing user experience – it&apos;s where creativity meets technical skill! Check out my GitHub profile to see what I&apos;ve built!
-          </p>
+         I'm a creative full stack developer with a passion for building stunning and interactive websites. I have a strong foundation in front-end technologies like HTML, CSS, and JavaScript, which I use to craft seamless user interfaces. I also work with modern tools like React and Tailwind CSS to enhance my designs and streamline development. On the backend, I'm learning Laravel and MySQL, alongside using Next.js, Redux Toolkit, MongoDB, and TypeScript to build robust and efficient applications. My goal is to create exceptional user experiences by blending creativity with technical expertise. Check out my GitHub profile to see my projects! </p>
           <div>
             <table className='space-y-1'>
               <tbody>
