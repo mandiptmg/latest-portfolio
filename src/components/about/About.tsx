@@ -40,12 +40,6 @@ const About = () => {
                   </td>
                 </tr>
                 <tr>
-                  <td className='color1 font-semibold'>Age:</td>
-                  <td className='dark:text-gray-200 font-light text-gray-500 pl-4'>
-                    20
-                  </td>
-                </tr>
-                <tr>
                   <td className='color1 font-semibold'>Address:</td>
                   <td className='dark:text-gray-200 font-light text-gray-500 pl-4'>
                     Nepal, Hetauda-3
