@@ -47,15 +47,13 @@ const Page = () => {
                   className='font-medium text-gray-500 dark:text-gray-200'
                 >
                   {' '}
-                  Front End Developer
+                  Full Stack Developer
                 </h1>
                 <p
                   data-aos='zoom-in-down'
                   className='text-sm sm:text-base text-gray-500 dark:text-gray-200'
                 >
-                  I am a passionate frontend developer, crafting immersive
-                  digital experiences. Each project blends technical skills with
-                  a love for design.
+                 I’m a passionate full stack developer creating immersive digital experiences that merge technical skill with design finesse.
                 </p>
                 <h1
                   data-aos='zoom-in-down'
@@ -87,11 +85,16 @@ const Page = () => {
                   <tbody>
                     <tr>
                       <td>Phone:</td>
-                      <td>+977 9809118069</td>
+                      <td>
+                          <a href="tel:+9779809118069" className="text-blue-600 hover:underline">
+      +977 9809118069
+    </a></td>
                     </tr>
                     <tr>
                       <td>Email:</td>
-                      <td>mandiptamang125@gmail.com</td>
+                      <td> <a href="mailto:mandiptamang125@gmail.com" className="text-blue-600 hover:underline">
+      mandiptamang125@gmail.com
+    </a></td>
                     </tr>
                   </tbody>
                 </table>
