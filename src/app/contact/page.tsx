@@ -86,7 +86,7 @@ const Page = () => {
                     <tr>
                       <td>Phone:</td>
                       <td>
-                          <a href="tel:+9779809118069" className="text-blue-600 hover:underline">
+                          <a href="https://wa.me/+9779809118069" className="text-blue-600 hover:underline">
       +977 9809118069
     </a></td>
                     </tr>
