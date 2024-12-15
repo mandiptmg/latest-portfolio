@@ -192,8 +192,16 @@ import refract from './../public/project/refract.png'
 import moai from './../public/project/moai.png'
 import portfolio from './../public/project/portfolio.png'
 import csoft from './../public/project/csoft.png'
+import luxeNest from './../public/project/luxeNest.png'
+
 
 export const projectData = [
+   {
+    id: 000,
+    title: 'LuxeNest',
+    img: luxeNest,
+    link: 'https://luxe-nest.vercel.app/',
+  },
   {
     id: 0,
     title: 'Creation Soft Nepal',
