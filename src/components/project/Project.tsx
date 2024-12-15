@@ -30,7 +30,7 @@ const Project = () => {
                   alt={item.title}
                   width={470}
                   height={40}
-                  className='w-full h-[2500px]  translate-y-0  group-hover:-translate-y-[77.5%] transition-all hover:ease-in duration-[4s] cursor-pointer object-fill 
+                  className='w-full h-[2500px]  translate-y-0  group-hover:-translate-y-[77.5%] transition-all hover:ease-in duration-[4s] cursor-pointer object-contain 
                 />
               </div>
               <h1 className='group-hover:text-white border border-[#1F618D]/70 shadow-2xl text-base  md:text-xl font-thin text-left capitalize text-black group-hover:bg-[#1F618D]/70 rounded-lg dark:text-white mt-4 items-center flex justify-between   w-full py-2 px-4 duration-700'>
