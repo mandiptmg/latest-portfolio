@@ -197,7 +197,7 @@ import luxeNest from './../public/project/luxeNest.png'
 
 export const projectData = [
    {
-    id: 000,
+    id: 9,
     title: 'LuxeNest',
     img: luxeNest,
     link: 'https://luxe-nest.vercel.app/',
