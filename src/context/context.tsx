@@ -1,3 +1,4 @@
+
 'use client'
 import { createContext, useContext, useEffect, useState } from 'react'
 import AOS from 'aos'
@@ -40,7 +41,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
 
     const handlerStickey = () => {
       if (window.scrollY > 50) {
-        setScroll('bg-gray-100 dark:bg-[#0f152c] shadow-xl')
+        setScroll('bg-gray-100 dark:bg-[#222831] shadow-xl')
       } else {
         setScroll('')
       }

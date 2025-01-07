@@ -30,12 +30,6 @@ const Header = () => {
     >
       <Link href='/'>
         <div
-          // initial={{ opacity: 0, scale: 0 }}
-          // animate={{ opacity: 1, scale: 1 }}
-          // transition={{
-          //   duration: 1,
-          //   ease: 'easeInOut', // Example easing function
-          // }}
           className='flex items-center'
         >
           <Image
@@ -50,7 +44,7 @@ const Header = () => {
           </h1>
         </div>
       </Link>
-      <div className='hidden md:inline-flex items-center gap-7'>
+      <div className='hidden md:inline-flex items-center gap-x-7'>
         {headerData.map((item: headerProps) => (
           <div key={item.id}>
             <Link href={item.link}>

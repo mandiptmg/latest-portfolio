@@ -64,7 +64,7 @@ const ContactForm = () => {
   }
 
   return (
-    <div>
+    <div className='p-20'>
       <form
         onSubmit={handlerSubmit}
         data-aos='fade-left'
@@ -81,7 +81,7 @@ const ContactForm = () => {
           <input
             type='text'
             id='fullName'
-            className='mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#1F618D] focus:outline-[#1F618D] focus:ring-[#1F618D]'
+            className='mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#00ADB5] focus:outline-[#00ADB5] focus:ring-[#00ADB5]'
             placeholder='Enter your full name'
             value={user.fullName}
             onChange={handlerChange}
@@ -98,7 +98,7 @@ const ContactForm = () => {
           <input
             type='email'
             id='email'
-            className='mt-1 block p-2 w-full rounded-md border-gray-300 shadow-sm focus:border-[#1F618D] focus:outline-[#1F618D] focus:ring-[#1F618D]'
+            className='mt-1 block p-2 w-full rounded-md border-gray-300 shadow-sm focus:border-[#00ADB5] focus:outline-[#00ADB5] focus:ring-[#00ADB5]'
             placeholder='Enter your email address'
             value={user.email}
             onChange={handlerChange}
@@ -114,7 +114,7 @@ const ContactForm = () => {
           </label>
           <textarea
             id='message'
-            className='mt-1 block w-full focus:outline-[#1F618D] rounded-md p-2 border-gray-300 shadow-sm focus:border-[#1F618D] resize-none focus:ring-[#1F618D]'
+            className='mt-1 block w-full focus:outline-[#00ADB5] rounded-md p-2 border-gray-300 shadow-sm focus:border-[#00ADB5] resize-none focus:ring-[#00ADB5]'
             rows={4}
             placeholder='Enter your message'
             value={user.message}
@@ -124,7 +124,7 @@ const ContactForm = () => {
         </div>
         <button
           type='submit'
-          className='w-full bg-[#1F618D] hover:bg-[#164362] duration-700 text-white py-2 px-4 rounded-md  focus:outline-[#1F618D] focus:ring-2 focus:ring-offset-2 focus:ring-[#1F618D]'
+          className='w-full bg-[#00ADB5] hover:bg-[rgb(143,195,231)] duration-700 text-white py-2 px-4 rounded-md  focus:outline-[#00ADB5] focus:ring-2 focus:ring-offset-2 focus:ring-[#00ADB5]'
         >
           Send Message
         </button>

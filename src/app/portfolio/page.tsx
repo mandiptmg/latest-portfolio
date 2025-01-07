@@ -30,18 +30,18 @@ const Project = () => {
                 onClick={() => window.open(`${item.link}`)}
                 className='w-full group hover:scale-[1.04] duration-700 relative cursor-pointer '
               >
-                <div className='h-[300px] shadow1 overflow-hidden w-full'>
+                <div className='h-[300px] shadow1 rounded-t-md overflow-hidden w-full'>
                   <Image
                     src={item.img}
                     alt={item.title}
                     width={470}
                     height={40}
-                    className='w-full h-[2500px]  translate-y-0  group-hover:-translate-y-[77.5%] transition-all hover:ease-in duration-[4s] cursor-pointer object-fit '
+                    className='w-full h-[2500px]  translate-y-0  group-hover:-translate-y-[77.5%] transition-all hover:ease-in duration-[4s] cursor-pointer' 
                   />
                 </div>
-                <h1 className='group-hover:text-white border border-[#1F618D]/70 shadow-2xl text-base  md:text-xl font-thin text-left capitalize text-black group-hover:bg-[#1F618D]/70 rounded-lg mt-4 items-center flex justify-between dark:text-white  w-full py-2 px-4 duration-700'>
+                <h1 className='group-hover:text-white border border-[#00ADB5]/70 shadow-2xl text-sm  md:text-xl  text-left capitalize text-black group-hover:bg-[#00ADB5]/70 rounded-lg mt-4 items-center flex justify-between dark:text-white  w-full py-2 px-4 duration-700'>
                   {item.title}
-                  <FaArrowUp className='p-1 rounded-full rotate-45 text-2xl bg-[#1F618D]/70 text-gray-200 group-hover:bg-white font-thin group-hover:text-black' />
+                  <FaArrowUp className='p-1 rounded-full rotate-45 text-2xl bg-[#00ADB5]/70 text-gray-200 group-hover:bg-white font-thin group-hover:text-black' />
                 </h1>
               </div>
             ))}

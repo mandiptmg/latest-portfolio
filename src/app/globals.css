@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 .color {
-  @apply text-[#101720];
+  @apply text-[#222831];
 }
 
 .color1 {
-  @apply text-[#1F618D];
+  @apply text-[#00ADB5];
 }
 .darkcolor {
-  @applay text-[#F4F6F7 ];
+  @apply text-[#F4F6F7];
 }
 
 .shadow1 {
