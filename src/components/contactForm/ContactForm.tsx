@@ -64,7 +64,7 @@ const ContactForm = () => {
   }
 
   return (
-    <div className='p-20'>
+    <div className='md:p-20 p-7'>
       <form
         onSubmit={handlerSubmit}
         data-aos='fade-left'

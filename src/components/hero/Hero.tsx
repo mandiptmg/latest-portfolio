@@ -7,7 +7,7 @@ const Hero = () => {
   const { dark } = useGlobalContext();
   return (
     <div
-      className={`w-[90vw] min-h-screen  py-8 mx-auto bg-no-repeat bg-cover`}
+      className={`w-[90vw] min-h-screen pt-20  mx-auto bg-no-repeat bg-cover`}
     >
       <div data-aos="fade-up" className="grid  md:grid-cols-2">
         <div className="grid place-items-center">

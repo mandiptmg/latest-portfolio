@@ -23,6 +23,7 @@ import {
   FaHtml5,
   FaCss3,
   FaGitAlt,
+  FaEnvelope,
 } from 'react-icons/fa'
 // import { MdMiscellaneousServices } from 'react-icons/md'
 
@@ -85,10 +86,10 @@ export const iconData = [
     link: 'https://www.linkedin.com/in/mandip-tamang',
   },
   {
-    title: 'Twitter',
+    title: 'Gmail',
     id: 5,
-    icon: FaTwitter,
-    link: 'https://twitter.com/mandiptamang77',
+    icon: FaEnvelope,
+    link: 'mailto:mandiptamang159@gmail.com',
   },
 ]
 
