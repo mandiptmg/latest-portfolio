@@ -259,3 +259,28 @@ export const projectData = [
   },
   
 ]
+
+
+
+export  const experiences = [
+  {
+    company: "Creation Soft Nepal",
+    role: "Junior Full Stack Developer",
+    period: "July 2024 – Oct 2024",
+    responsibilities: [
+      "Developed a dynamic, responsive website with React.js and Laravel, boosting user engagement by 35% and enhancing performance by 50%.",
+      "Integrated RESTful APIs and optimized database queries with MySQL, reducing load times by 50% and enhancing scalability.",
+      "Collaborated within a Senior Developer team, delivering new features and bug fixes on time, improving project delivery efficiency by 30%.",
+    ],
+  },
+  {
+    company: "Creation Soft Nepal",
+    role: "Full Stack Developer Intern",
+    period: "April 2024 – June 2024",
+    responsibilities: [
+      "Contributed to building web applications using React.js for front-end and Laravel for back-end, accelerating development speed by 25%.",
+      "Assisted in optimizing database performance and reducing query execution time by 40%, ensuring seamless front-end and back-end integration.",
+      "Improved sprint planning and team collaboration during daily stand-ups, achieving a 15% increase in sprint efficiency.",
+    ],
+  },
+];

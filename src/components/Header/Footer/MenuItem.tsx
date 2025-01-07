@@ -16,7 +16,7 @@ const MenuItem = () => {
         initial={{ x: "500", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ ease: "easeIn", duration: 0.7 }}
-        className="absolute top-0 right-0 h-screen dark:text-white w-1/2 dark:bg-[#222831] bg-white"
+        className="absolute top-0 right-0 h-screen dark:text-white w-2/3 dark:bg-[#222831] bg-white"
       >
         <button
           onClick={() => setMenu(false)}
@@ -45,9 +45,9 @@ const MenuItem = () => {
                   key={item.id}
                   title={item.title}
                   onClick={() => window.open(item.link)}
-                  className="flex items-center hover:scale-105 duration-700 ease-in-out p-1 cursor-pointer bg-gray-400 rounded-full  gap-2 justify-center"
+                  className="flex items-center hover:scale-110 duration-700 ease-in-out p-2 cursor-pointer bg-gray-400 rounded-full  gap-2 justify-center"
                 >
-                  <item.icon />
+                  <item.icon  className="dark:text-black text-white"  />
                 </li>
               ))}
             </ul>
