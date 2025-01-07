@@ -74,17 +74,15 @@ const About = () => {
               </tbody>
             </table>
           </div>
-          {/* <Link href="/mandiptamang.pdf" passHref>
-      <Link
-        download="resume.pdf"
-        className='px-5 py-2 font-medium bg-[#1F618D] text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] flex items-center gap-1'
-      >
-        <FaDownload className='text-xl sm:text-2xl' />
-        <span className='text-base md:text-lg font-semibold'>
-          Resume
-        </span>
-      </Link> */}
-          {/* </Link> */}
+          <Link href="/mandiptamang.pdf" passHref>
+            <a
+              download="resume.pdf"
+              className="px-5 py-2 font-medium bg-[#1F618D] text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] flex items-center gap-1"
+            >
+              <FaDownload className="text-xl sm:text-2xl" />
+              <span className="text-base md:text-lg font-semibold">Resume</span>
+            </a>
+          </Link>
         </div>
       </div>
     </div>
