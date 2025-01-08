@@ -6,7 +6,7 @@ import Link from "next/link";
 import Experience from "@/components/about/Experience";
 const AboutPage = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <div className="bg-cover bg-center  bg-[url(https://c0.wallpaperflare.com/preview/323/1002/408/man-male-wall-hide.jpg)] grid place-items-center text-center ">
         <h1 className="text-5xl py-20 w-full h-full bg-black/50 font-semibold uppercase text-white">
           about me
