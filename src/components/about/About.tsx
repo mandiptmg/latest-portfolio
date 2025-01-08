@@ -34,18 +34,24 @@ const About = () => {
             <div className="w-16 h-1 bg-[#00ADB5]"></div>
           </div>
 
+        <div>
           <p className="dark:text-gray-200 text-sm md:text-base text-gray-500">
-            I&apos;m a creative full stack developer with a passion for building
-            stunning and interactive websites. I have a strong foundation in
-            front-end technologies like HTML, CSS, and JavaScript, which I use
-            to craft seamless user interfaces. I also work with modern tools
-            like React and Tailwind CSS to enhance my designs and streamline
-            development. On the backend, I&apos;m learning Laravel and MySQL,
-            alongside using Next.js, Redux Toolkit, MongoDB, and TypeScript to
-            build robust and efficient applications. My goal is to create
-            exceptional user experiences by blending creativity with technical
-            expertise. Check out my GitHub profile to see my projects!{" "}
-          </p>
+    I&apos;m a passionate <strong>Full Stack Developer</strong> with <strong>over 1+ years of experience</strong> crafting 
+    <strong>responsive and dynamic web applications</strong>. I have a strong foundation in <strong>HTML, CSS, and JavaScript</strong>, 
+    combined with expertise in modern tools like <strong>React.js, Next.js, Tailwind CSS, and Redux Toolkit</strong> 
+    to build seamless and engaging user interfaces.
+  </p>
+  <p className="dark:text-gray-200 text-sm md:text-base text-gray-500">
+    On the backend, I’m proficient in <strong>Laravel, Java, Spring Boot, MySQL</strong>, and <strong>MongoDB</strong>, 
+    developing <strong>robust backend systems</strong> and <strong>scalable APIs</strong> that power efficient applications.
+  </p>
+  <p className="dark:text-gray-200 text-sm md:text-base text-gray-500">
+    I thrive in <strong>collaborative environments</strong>, blending creativity with technical expertise to transform ideas 
+    into <strong>functional, visually appealing digital solutions</strong>.
+  </p>
+  <p className="dark:text-gray-200 text-sm md:text-base text-gray-500"><strong>Let’s build something amazing together!</strong></p>
+ 
+        </div>
           <div className="flex items-center gap-6">
             <Link href="/mandiptamang.pdf" passHref>
               <a
