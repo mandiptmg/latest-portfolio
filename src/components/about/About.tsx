@@ -47,7 +47,7 @@ const About = () => {
             expertise. Check out my GitHub profile to see my projects!{" "}
           </p>
           <div className="flex items-center gap-6">
-            <Link href="/mandiptamang.pdf" passHref>
+            {/* <Link href="/mandiptamang.pdf" passHref>
               <a
                 download="resume.pdf"
                 className="px-5 py-2 font-medium bg-[#00ADB5] text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] flex items-center gap-1"
@@ -57,7 +57,7 @@ const About = () => {
                   Resume
                 </span>
               </a>
-            </Link>
+            </Link> */}
 
             <button className={pathname === "/about" ? "hidden" : "none"}>
               <Link
