@@ -34,7 +34,7 @@ const About = () => {
             <div className="w-16 h-1 bg-[#00ADB5]"></div>
           </div>
 
-        <div>
+        <div className= "space-y-2">
           <p className="dark:text-gray-200 text-sm md:text-base text-gray-500">
     I&apos;m a passionate <strong>Full Stack Developer</strong> with <strong>over 1+ years of experience</strong> crafting 
     <strong>responsive and dynamic web applications</strong>. I have a strong foundation in <strong>HTML, CSS, and JavaScript</strong>, 
