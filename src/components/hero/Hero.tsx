@@ -19,11 +19,7 @@ const Hero = () => {
               Full stack developer
             </p>
             <p className="text-sm my-6 dark:text-gray-200 text-gray-500">
-              I design and develop engaging websites with stunning visuals and
-              seamless user experiences. As a full stack developer, I integrate
-              modern web technologies to create user-friendly interfaces and
-              robust backends, ensuring both aesthetic appeal and functional
-              performance.
+            I’m a passionate Full Stack Developer with 1+ years of experience crafting visually stunning and user-friendly websites. I specialize in modern web technologies to build seamless interfaces and robust backends, ensuring both aesthetics and performance.
             </p>
             <div className="flex items-center gap-4">
               <button
