@@ -1,24 +1,29 @@
 "use client";
 import { useGlobalContext } from "@/context/context";
 import hero from "../../../public/hero.png";
+import bgImage from "../../../public/bgImage.jpg";
 import Image from "next/image";
+
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 const Hero = () => {
   const { dark } = useGlobalContext();
   return (
-    <div
-      className={`w-[90vw] min-h-screen pt-20  mx-auto bg-no-repeat bg-cover`}
+   <div
+      style={{ backgroundImage: `url(${bgImage})` }}
+      className="bg-no-repeat pt-20  min-h-[89vh] bg-cover bg-blend-overlay    dark:bg-black/50"
     >
-      <div data-aos="fade-up" className="grid  md:grid-cols-2">
-        <div className="grid place-items-center">
-          <div className="">
-            <h5 className="text-base md:text-lg lg:text-xl dark:text-white color font-normal">
-              Hi! I am Mandip, a
-            </h5>
+      <div className={`w-[90vw]  mx-auto `}>
+        <div data-aos="fade-up" className="lg:grid grid-cols-2 flex flex-col-reverse gap-7 ">
+          <div className="grid place-items-center py-7">
+            <div className="">
+              <h5 className="text-base md:text-lg lg:text-xl dark:text-white color font-normal">
+                Hi! I am Mandip, a
+              </h5>
+           
             <p className="text-3xl mt-2 capitalize font-bold color1 md:text-3xl lg:text-5xl">
               Full stack developer
             </p>
-            <p className="text-sm my-6 dark:text-gray-200 text-gray-500">
+            <p  className="text-base my-6 dark:text-gray-200 text-gray-700">
             I’m a passionate Full Stack Developer with 1+ years of experience crafting visually stunning and user-friendly websites. I specialize in modern web technologies to build seamless interfaces and robust backends, ensuring both aesthetics and performance.
             </p>
             <div className="flex items-center gap-4">
@@ -65,6 +70,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
+     </div>
   );
 };
 
