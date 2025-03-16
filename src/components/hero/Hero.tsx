@@ -1,85 +1,77 @@
 "use client";
 import { useGlobalContext } from "@/context/context";
-import Image from "next/image";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import hero from "../../../public/hero.png";
 import bgImage from "../../../public/bgImage.jpg";
+import Image from "next/image";
 
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 const Hero = () => {
   const { dark } = useGlobalContext();
-
   return (
-    <div className="relative min-h-[89vh] bg-cover bg-no-repeat pt-20 dark:bg-black/50">
-      <Image
-        src={bgImage}
-        alt="Background"
-        layout="fill"
-        objectFit="cover"
-        className="absolute inset-0 -z-10"
-      />
-
-      <div className="w-[90vw] mx-auto">
-        <div className="lg:grid grid-cols-2 flex flex-col-reverse gap-7 items-center">
-          {/* Left Section - Text Content */}
-          <div className="text-center lg:text-left py-7">
-            <h5 className="text-lg lg:text-xl font-normal dark:text-white">
-              Hi! I am Mandip, a
-            </h5>
-            <p className="text-3xl lg:text-5xl font-bold capitalize mt-2 text-[#00ADB5]">
-              Full Stack Developer
+   <div
+      style={{ backgroundImage: `url(${bgImage})` }}
+      className="bg-no-repeat pt-20  min-h-[89vh] bg-cover bg-blend-overlay    dark:bg-black/50"
+    >
+      <div className={`w-[90vw]  mx-auto `}>
+        <div data-aos="fade-up" className="lg:grid grid-cols-2 flex flex-col-reverse gap-7 ">
+          <div className="grid place-items-center py-7">
+            <div className="">
+              <h5 className="text-base md:text-lg lg:text-xl dark:text-white color font-normal">
+                Hi! I am Mandip, a
+              </h5>
+           
+            <p className="text-3xl mt-2 capitalize font-bold color1 md:text-3xl lg:text-5xl">
+              Full stack developer
             </p>
-            <p className="text-gray-700 dark:text-gray-200 text-base my-6">
-              I’m a passionate Full Stack Developer with 1+ years of experience
-              crafting visually stunning and user-friendly websites. I
-              specialize in modern web technologies to build seamless
-              interfaces and robust backends, ensuring both aesthetics and
-              performance.
+            <p  className="text-base my-6 dark:text-gray-200 text-gray-700">
+            I’m a passionate Full Stack Developer with 1+ years of experience crafting visually stunning and user-friendly websites. I specialize in modern web technologies to build seamless interfaces and robust backends, ensuring both aesthetics and performance.
             </p>
-
-            {/* Social Buttons */}
-            <div className="flex justify-center lg:justify-start gap-4">
-              <SocialButton
-                href="https://github.com/mandiptmg"
-                Icon={FaGithub}
-                label="Github"
-              />
-              <SocialButton
-                href="https://www.linkedin.com/in/mandip-tamang/"
-                Icon={FaLinkedin}
-                label="LinkedIn"
-              />
+            <div className="flex items-center gap-4">
+              <button
+                onClick={() => window.open("https://github.com/mandiptmg")}
+                className="px-5 py-2 font-medium bg-[#00ADB5] text-[#EEEEEE] w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] flex items-center gap-1"
+              >
+                <FaGithub className="text-xl sm:text-2xl " />{" "}
+                <span className="text-base sm:text-lg font-semibold">
+                  Github
+                </span>
+              </button>
+              <button
+                onClick={() =>
+                  window.open("https://www.linkedin.com/in/mandip-tamang/")
+                }
+                className="px-5 py-2 font-medium bg-[#00ADB5] text-[#EEEEEE] w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] flex items-center gap-1"
+              >
+                <FaLinkedin className="text-xl sm:text-2xl " />{" "}
+                <span className="text-base md:text-lg font-semibold">
+                  Linkedin
+                </span>
+              </button>
             </div>
           </div>
+        </div>
+        <div className=" w-full grid mx-auto place-items-center h-full">
+          <div data-aos="fade-left" className="relative md:h-[70%]">
+            <Image
+              src={hero}
+              alt="logo"
+              className={`${
+                dark ? "grayscale" : "none"
+              } w-full h-full    object-contain `}
+            />
 
-          {/* Right Section - Image */}
-          <div className="grid place-items-center">
-            <div className="relative">
-              <Image
-                src={hero}
-                alt="Hero"
-                className={`${dark ? "grayscale" : ""} object-contain`}
-              />
-              <div
-                className="bg-[#00ADB5]/50 absolute bottom-0 left-0 w-full h-60 -z-10"
-                style={{ clipPath: "polygon(1% 46%, 100% 8%, 100% 100%, 0% 100%)" }}
-              ></div>
-            </div>
+            <div
+              className="bg-[#00ADB5]/50 -z-10 w-full h-60 absolute bottom-0 left-0"
+              style={{
+                clipPath: "polygon(1% 46%, 100% 8%, 100% 100%, 0% 100%)",
+              }}
+            ></div>
           </div>
         </div>
       </div>
     </div>
+     </div>
   );
 };
 
-// Reusable Social Button Component
-const SocialButton = ({ href, Icon, label }) => (
-  <button
-    onClick={() => window.open(href, "_blank")}
-    className="flex items-center gap-2 px-5 py-2 bg-[#00ADB5] text-white font-medium shadow-[3px_3px_0px_black] transition-all hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]"
-  >
-    <Icon className="text-2xl" />
-    <span className="text-lg font-semibold">{label}</span>
-  </button>
-);
-
-export default Hero;
+export default Hero; improve code 
