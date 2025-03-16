@@ -32,12 +32,12 @@ const Hero = () => {
             {/* Social Buttons */}
             <div className="flex justify-center lg:justify-start gap-4">
               <SocialButton
-                href="https://github.com/mandiptmg"
+                link="https://github.com/mandiptmg"
                 Icon={FaGithub}
                 label="Github"
               />
               <SocialButton
-                href="https://www.linkedin.com/in/mandip-tamang/"
+                link="https://www.linkedin.com/in/mandip-tamang/"
                 Icon={FaLinkedin}
                 label="LinkedIn"
               />
@@ -65,9 +65,9 @@ const Hero = () => {
 };
 
 // Reusable Social Button Component
-const SocialButton = ({ href, Icon, label }) => (
+const SocialButton = ({ link, Icon, label }) => (
   <button
-    onClick={() => window.open(href, "_blank")}
+    onClick={() => window.open(link)}
     className="flex items-center gap-2 px-5 py-2 bg-[#00ADB5] text-white font-medium shadow-[3px_3px_0px_black] transition-all hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]"
   >
     <Icon className="text-2xl" />
