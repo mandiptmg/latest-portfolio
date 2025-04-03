@@ -31,7 +31,7 @@ const Hero = () => {
               Full Stack Developer
             </p>
             <p className="text-gray-700 dark:text-gray-200 text-base my-6">
-              I’m a passionate Full Stack Developer with 1+ years of experience
+              I’m a passionate Full Stack Developer with 3 years of experience
               crafting visually stunning and user-friendly websites. I
               specialize in modern web technologies to build seamless interfaces
               and robust backends, ensuring both aesthetics and performance.
