@@ -36,7 +36,7 @@ const About = () => {
 
         <div className= "space-y-2">
           <p className="dark:text-gray-200 text-sm md:text-base text-gray-500">
-    I&apos;m a passionate <strong>Full Stack Developer</strong> with <strong>over 1+ years of experience</strong> crafting 
+    I&apos;m a passionate <strong>Full Stack Developer</strong> with <strong>over 3 years of experience</strong> crafting 
     <strong>responsive and dynamic web applications</strong>. I have a strong foundation in <strong>HTML, CSS, and JavaScript</strong>, 
     combined with expertise in modern tools like <strong>React.js, Next.js, Tailwind CSS, and Redux Toolkit</strong> 
     to build seamless and engaging user interfaces.
