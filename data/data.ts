@@ -265,8 +265,8 @@ export const projectData = [
 export  const experiences = [
   {
     company: "Creation Soft Nepal",
-    role: "Junior Full Stack Developer",
-    period: "July 2024 – Oct 2024",
+    role: "Full Stack Developer",
+    period: "July 2023 – Jan 2024",
     responsibilities: [
       "Developed a dynamic, responsive website with React.js and Laravel, boosting user engagement by 35% and enhancing performance by 50%.",
       "Integrated RESTful APIs and optimized database queries with MySQL, reducing load times by 50% and enhancing scalability.",
@@ -276,7 +276,7 @@ export  const experiences = [
   {
     company: "Creation Soft Nepal",
     role: "Full Stack Developer Intern",
-    period: "April 2024 – June 2024",
+    period: "Jan 2023 – June 2023",
     responsibilities: [
       "Contributed to building web applications using React.js for front-end and Laravel for back-end, accelerating development speed by 25%.",
       "Assisted in optimizing database performance and reducing query execution time by 40%, ensuring seamless front-end and back-end integration.",
