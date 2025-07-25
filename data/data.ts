@@ -255,7 +255,7 @@ export const projectData = [
     id: 8,
     title: 'portfolio',
     img: portfolio,
-    link: 'https://mandiptamang1.vercel.app/',
+    link: 'https://karmalama.vercel.app/',
   },
   
 ]
