@@ -12,7 +12,7 @@ const secondRow = portfolioItems.slice(portfolioItems.length / 2);
 const Service = () => {
   const pathname = usePathname();
   return (
-    <div className="py-20 w-[90vw] mx-auto">
+    <div className="py-20 w-[90vw] main-container">
       {/* Section Title */}
       <div
         className={`text-center mb-12 ${

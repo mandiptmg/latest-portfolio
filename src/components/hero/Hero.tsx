@@ -11,16 +11,14 @@ const Hero = () => {
   const { dark } = useGlobalContext();
 
   return (
-   <div className="relative min-h-[89vh] bg-cover bg-no-repeat pt-20 dark:bg-black/50">
-       {/* Background Image */}
-      <Image
-        src={bgImage}
-        alt="Background Image"
-        layout="fill"
-        objectFit="cover"
-        className="absolute inset-0 -z-10"
-      />
-      <div className="w-[90vw] mx-auto">
+    <div
+  className="relative bg-cover bg-no-repeat bg-center min-h-screen  md:min-h-[80vh] lg:min-h-[70vh] "
+  style={{ backgroundImage: `url(${bgImage.src})` }}
+>
+    {/* Dark overlay (only in dark mode) */}
+  <div className="absolute inset-0 dark:bg-black/50"></div>
+
+      <div className="w-[90vw] relative z-10 main-container min-h-screen md:min-h-[80vh] lg:min-h-[70vh] grid place-items-center">
         <div className="lg:grid grid-cols-2 flex flex-col-reverse gap-7 items-center">
           {/* Left Section - Text Content */}
           <div className="text-center lg:text-left py-7">

@@ -14,7 +14,7 @@ const Page = () => {
         </h1>
       </div>
 
-      <div className="py-20 w-[90vw] mx-auto">
+      <div className="py-20 w-[90vw] main-container">
         <div className="text-center">
           <h1
             data-aos="fade-right"

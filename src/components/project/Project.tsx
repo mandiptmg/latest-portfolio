@@ -7,7 +7,7 @@ import { FaArrowUp } from "react-icons/fa";
 
 const Project = () => {
   return (
-    <div className="py-20 w-[90vw] mx-auto">
+    <div className="py-20 w-[90vw] main-container">
       <div className="text-center">
         <div data-aos="fade-up" className="grid place-items-center">
           <div>
@@ -28,13 +28,14 @@ const Project = () => {
               className="w-full group hover:scale-[1.04] duration-700 relative cursor-pointer "
             >
               <div className="h-[300px] shadow1 rounded-t-md overflow-hidden w-full">
-                <Image
-                  src={item.img}
-                  alt={item.title}
-                  width={470}
-                  height={40}
-                  className="w-full h-[2500px]  translate-y-0  group-hover:-translate-y-[77.5%] transition-all hover:ease-in duration-[4s] cursor-pointer"
-                />
+                 <Image
+                                    src={item.img}
+                                    alt={item.title}
+                                    width={470}
+                                    height={40}
+                                    className='w-full max-h-[2500px] object-contain  translate-y-0  group-hover:-translate-y-[77.5%] transition-all hover:ease-in duration-[4s] cursor-pointer' 
+                                  />
+               
               </div>
               <h1 className="group-hover:text-white border border-[#00ADB5]/70 shadow-2xl  md:text-xl text-sm text-left capitalize text-black group-hover:bg-[#00ADB5]/70 rounded-lg dark:text-white mt-4 items-center flex justify-between   w-full py-2 px-4 duration-700">
                 {item.title}

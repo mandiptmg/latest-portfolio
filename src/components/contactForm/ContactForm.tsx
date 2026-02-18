@@ -1,7 +1,7 @@
 import { useState } from 'react'
 // import { BiMessageAltCheck } from 'react-icons/bi'
 import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
+// import 'react-toastify/dist/ReactToastify.css'
 
 const ContactForm = () => {
   const [user, setUser] = useState({
@@ -64,7 +64,7 @@ const ContactForm = () => {
   }
 
   return (
-    <div className='md:p-20 p-7'>
+    <div className='md:p-20 py-7 px-2'>
       <form
         onSubmit={handlerSubmit}
         data-aos='fade-left'

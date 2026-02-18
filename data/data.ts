@@ -261,26 +261,64 @@ export const projectData = [
 ]
 
 
-
-export  const experiences = [
+export const experiences = [
   {
-    company: "Creation Soft Nepal",
-    role: "Full Stack Developer",
-    period: "July 2023 – Jan 2024",
+    company: "Excellence Code Marketing LLC, Dubai",
+    role: "Frontend Developer (Full-Stack Support)",
+    period: "Jul 2025 – Present",
     responsibilities: [
-      "Developed a dynamic, responsive website with React.js and Laravel, boosting user engagement by 35% and enhancing performance by 50%.",
-      "Integrated RESTful APIs and optimized database queries with MySQL, reducing load times by 50% and enhancing scalability.",
-      "Collaborated within a Senior Developer team, delivering new features and bug fixes on time, improving project delivery efficiency by 30%.",
+      "Developed and maintained 30+ reusable, responsive UI components using React.js, SCSS, and Tailwind CSS.",
+      "Collaborated with UI/UX designers and backend engineers to deliver 7+ production-ready features.",
+      "Converted Figma designs into scalable and maintainable frontend architecture with consistent UI standards.",
+      "Performed code reviews and refactored legacy components, reducing code duplication by approximately 35%.",
+      "Integrated RESTful APIs and JWT-based authentication to support secure full-stack functionality.",
+      "Ensured cross-browser compatibility and mobile responsiveness across all major devices.",
+    ],
+  },
+  {
+    company: "Creation Soft Nepal, Kathmandu",
+    role: "Frontend Developer (Full-Stack as Required)",
+    period: "Jun 2023 – Feb 2025",
+    responsibilities: [
+      "Led frontend development for multiple client-facing web applications using React.js and Tailwind CSS.",
+      "Integrated frontend interfaces with Laravel-based backend services and REST APIs.",
+      "Optimized application performance using component reuse, lazy loading, and efficient state management.",
+      "Collaborated with project managers and QA teams to deliver stable, production-ready releases.",
+      "Developed secure, role-based inventory management dashboards using React.js and Laravel.",
+      "Implemented JWT and OAuth2 authentication to support multi-role access control (Admin, Staff, Manager).",
     ],
   },
   {
     company: "Creation Soft Nepal",
-    role: "Full Stack Developer Intern",
-    period: "Jan 2023 – June 2023",
+    role: "Key Project – Inventory Management System",
+    period: "2024",
     responsibilities: [
-      "Contributed to building web applications using React.js for front-end and Laravel for back-end, accelerating development speed by 25%.",
-      "Assisted in optimizing database performance and reducing query execution time by 40%, ensuring seamless front-end and back-end integration.",
-      "Improved sprint planning and team collaboration during daily stand-ups, achieving a 15% increase in sprint efficiency.",
+      "Developed a secure, role-based inventory management dashboard using React.js and Laravel.",
+      "Implemented JWT and OAuth2 authentication to enable multi-role access (Admin, Staff, Manager).",
+      "Designed modular component architecture to improve maintainability and long-term scalability.",
+      "Enhanced data visualization and reporting features to support business decision-making.",
+    ],
+  },
+  {
+    company: "Creation Soft Nepal",
+    role: "Key Project – Dynamic Company Website with CMS",
+    period: "2024",
+    responsibilities: [
+      "Built a responsive corporate website with a custom CMS using Laravel Blade and React.js.",
+      "Designed and implemented an admin dashboard for non-technical content editors.",
+      "Applied SEO best practices, image optimization, and performance tuning to improve page load speed.",
+      "Ensured accessibility standards and mobile-first design principles across all pages.",
+    ],
+  },
+  {
+    company: "Creation Soft Nepal",
+    role: "Frontend Developer Intern",
+    period: "Mar 2023 – May 2023",
+    responsibilities: [
+      "Developed responsive UI components using React.js and Tailwind CSS.",
+      "Improved application performance through code splitting and lazy loading techniques.",
+      "Contributed to an internal UI component library to improve design consistency and development speed.",
+      "Fixed UI bugs and participated in team code reviews to enhance overall code quality.",
     ],
   },
 ];

@@ -26,9 +26,10 @@ const Footer = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   });
   return (
-    <div className="pt-4 bg-black/90  w-full">
-      <div className="grid items-center  grid-cols-12">
-        <div className="col-span-4 grid place-items-center">
+    <div className="pt-4 bg-black/90  ">
+    <div className="main-container  w-full">
+      <div className="flex justify-between gap-2 md:gap-5 items-center px-5 ">
+        <div className=" grid place-items-center">
           <Link href="/">
             {" "}
             <Image
@@ -40,7 +41,7 @@ const Footer = () => {
             />
           </Link>
         </div>
-        <div className="text-center grid md:place-items-center place-items-start col-span-8 text-gray-400">
+        <div className="text-center grid md:place-items-center place-items-start  text-gray-400">
           <div className="space-y-4">
             <div className="flex justify-center items-center gap-4">
               {iconData.map((icon: iconProps) => (
@@ -70,7 +71,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      </div>
       <div className="bg-black text-center py-5">
+
+    <div className="main-container ">
+
         <p className="text-white text-xs sm:text-sm">
           Copyright &copy;2024,Design by{" "}
           <span className="font-thin">MANDIP TAMANG</span>
@@ -82,6 +87,7 @@ const Footer = () => {
       >
         <FaArrowUp />
       </button>
+      </div>
     </div>
   );
 };

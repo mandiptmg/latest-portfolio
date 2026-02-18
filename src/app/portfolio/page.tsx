@@ -13,7 +13,7 @@ const Project = () => {
           Project
         </h1>
       </div>
-      <div className='py-20 w-[90vw] mx-auto'>
+      <div className='py-20 w-[90vw] main-container'>
         <div className='text-center'>
           <h1
             data-aos='fade-right'
@@ -36,7 +36,7 @@ const Project = () => {
                     alt={item.title}
                     width={470}
                     height={40}
-                    className='w-full h-[2500px]  translate-y-0  group-hover:-translate-y-[77.5%] transition-all hover:ease-in duration-[4s] cursor-pointer' 
+                    className='w-full max-h-[2500px] object-contain  translate-y-0  group-hover:-translate-y-[77.5%] transition-all hover:ease-in duration-[4s] cursor-pointer' 
                   />
                 </div>
                 <h1 className='group-hover:text-white border border-[#00ADB5]/70 shadow-2xl text-sm  md:text-xl  text-left capitalize text-black group-hover:bg-[#00ADB5]/70 rounded-lg mt-4 items-center flex justify-between dark:text-white  w-full py-2 px-4 duration-700'>

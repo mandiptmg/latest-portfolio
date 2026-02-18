@@ -12,7 +12,7 @@ const AboutPage = () => {
           about me
         </h1>
       </div>
-      <div className="w-[90vw] mx-auto py-20">
+      <div className="w-[90vw] main-container pb-20">
         <About />
         <div className="py-20">
         
