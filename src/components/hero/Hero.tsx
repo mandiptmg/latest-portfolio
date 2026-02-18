@@ -12,13 +12,13 @@ const Hero = () => {
 
   return (
     <div
-  className="relative bg-cover bg-no-repeat bg-center min-h-screen  md:min-h-[80vh] lg:min-h-[70vh] "
+  className="relative bg-cover bg-no-repeat bg-center py-20 md:py-40  mb-20"
   style={{ backgroundImage: `url(${bgImage.src})` }}
 >
     {/* Dark overlay (only in dark mode) */}
   <div className="absolute inset-0 dark:bg-black/50"></div>
 
-      <div className="w-[90vw] relative z-10 main-container min-h-screen md:min-h-[80vh] lg:min-h-[70vh] grid place-items-center">
+      <div className="w-[90vw] relative z-10 main-container  grid place-items-center">
         <div className="lg:grid grid-cols-2 flex flex-col-reverse gap-7 items-center">
           {/* Left Section - Text Content */}
           <div className="text-center lg:text-left py-7">
@@ -26,10 +26,10 @@ const Hero = () => {
               Hi! I am Mandip, a
             </h5>
             <p className="text-3xl lg:text-5xl font-bold capitalize mt-2 text-[#00ADB5]">
-              Full Stack Developer
+               Frontend-Focused Full Stack Developer
             </p>
             <p className="text-gray-700 dark:text-gray-200 text-base my-6">
-              I’m a passionate Full Stack Developer with 3 years of experience
+              I&apos;m a passionate Full Stack Developer with 3+ years of experience
               crafting visually stunning and user-friendly websites. I
               specialize in modern web technologies to build seamless interfaces
               and robust backends, ensuring both aesthetics and performance.

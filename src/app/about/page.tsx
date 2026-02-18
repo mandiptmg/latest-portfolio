@@ -39,7 +39,7 @@ const AboutPage = () => {
 
             <Link href="/contact">
               <button
-                data-aos="fade-up"
+                data-aos="fade-left"
                 className="group bg-black px-3 py-2 my-3 inline-flex items-start justify-start rounded-md cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#00ADB5] before:to-[#00ADB5]/70 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-md hover:before:left-0 text-[#fff] dark:bg-[#474F7A]  flex-col font-semibold text-base"
               >
                 Got a new project?

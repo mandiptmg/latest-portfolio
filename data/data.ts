@@ -194,71 +194,78 @@ import moai from './../public/project/moai.png'
 import portfolio from './../public/project/portfolio.png'
 import csoft from './../public/project/csoft.png'
 import luxeNest from './../public/project/luxeNest.png'
-
+import excellence from './../public/project/excellence.png'
 
 export const projectData = [
-   {
-    id: 9,
+  {
+    id: 0,
+    title: 'Excellence Code Marketing',
+    img: excellence,
+    link: 'https://excellence-code-llc.vercel.app/',
+  },
+  {
+    id: 1,
     title: 'LuxeNest',
     img: luxeNest,
     link: 'https://luxe-nest.vercel.app/',
   },
   {
-    id: 0,
+    id: 2,
     title: 'Creation Soft Nepal',
     img: csoft,
     link: 'https://creationsoftnepal.com.np/',
   },
   {
-    id: 1,
-    title: 'amazon clone',
-    img: amazon,
-    link: 'https://next-amazon-beta.vercel.app',
-  },
-  {
-    id: 2,
-    title: 'himalayanFitness gym',
-    img: gym,
-    link: 'https://himalayan-gym.vercel.app',
-  },
-  {
     id: 3,
-    title: 'journey',
-    img: journey,
-    link: 'https://journey-travel.vercel.app',
+    title: 'FurniVorgue',
+    img: furniVorgue,
+    link: 'https://furniVogue.vercel.app',
   },
   {
     id: 4,
-    title: 'falcon company',
+    title: 'Falcon Company',
     img: falcon,
     link: 'https://falcon-car.vercel.app',
   },
   {
     id: 5,
-    title: 'furniVorgue',
-    img: furniVorgue,
-    link: 'https://furniVogue.vercel.app',
+    title: 'Journey',
+    img: journey,
+    link: 'https://journey-travel.vercel.app',
   },
   {
     id: 6,
+    title: 'HimalayanFitness Gym',
+    img: gym,
+    link: 'https://himalayan-gym.vercel.app',
+  },
+  {
+    id: 7,
+    title: 'Portfolio',
+    img: portfolio,
+    link: 'https://karmalama.vercel.app/',
+  },
+  {
+    id: 8,
+    title: 'Moai',
+    img: moai,
+    link: 'https://moai-six.vercel.app/',
+  },
+  {
+    id: 9,
     title: 'Refract',
     img: refract,
     link: 'https://refract-coral.vercel.app/',
   },
   {
-    id: 7,
-    title: 'Moai',
-    img: moai,
-    link: 'https://moai-six.vercel.app/',
+    id: 10,
+    title: 'Amazon Clone',
+    img: amazon,
+    link: 'https://next-amazon-beta.vercel.app',
   },
-   {
-    id: 8,
-    title: 'portfolio',
-    img: portfolio,
-    link: 'https://karmalama.vercel.app/',
-  },
-  
-]
+];
+
+
 
 
 export const experiences = [

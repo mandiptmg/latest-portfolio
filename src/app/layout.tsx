@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import Header from "@/components/Header/Footer/Header";
 import Footer from "@/components/Header/Footer/Footer";
 import { Provider } from "./Provider";
@@ -17,6 +16,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  require("./globals.css");
   return (
     <html lang="en">
       <body
