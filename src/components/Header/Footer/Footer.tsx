@@ -28,14 +28,14 @@ const Footer = () => {
   return (
     <div className="pt-4 bg-black/90  ">
     <div className="main-container  w-full">
-      <div className="flex justify-between gap-2 md:gap-5 items-center px-5 ">
+      <div className="flex justify-between gap-2 md:gap-5 items-center px-5 py-10 ">
         <div className=" grid place-items-center">
           <Link href="/">
             {" "}
             <Image
               src={logoWhite}
-              width={200}
-              height={200}
+              width={150}
+              height={150}
               className="aspect-square inline-flex object-contain"
               alt="log"
             />
@@ -72,7 +72,7 @@ const Footer = () => {
         </div>
       </div>
       </div>
-      <div className="bg-black text-center py-5">
+      <div className="bg-black dark:bg-white/5  text-center py-5">
 
     <div className="main-container ">
 

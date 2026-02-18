@@ -36,11 +36,11 @@ const Header = () => {
             <Image
               src={dark ? logowhite : logoblack}
               alt="logo"
-              width={90}
-              height={90}
+              width={50}
+              height={50}
               className="aspect-auto object-contain"
             />
-            <h1>
+            <h1 className="ml-1">
               Mandip | <span className="font-semibold color1">Developer</span>
             </h1>
           </div>
