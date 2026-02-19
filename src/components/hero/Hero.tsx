@@ -4,19 +4,20 @@ import { useGlobalContext } from "@/context/context";
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import hero from "../../../public/hero.png";
+import bgImage2 from "../../../public/bgImage2.jpg";
 import bgImage from "../../../public/bgImage.jpg";
-
 
 const Hero = () => {
   const { dark } = useGlobalContext();
 
   return (
     <div
-  className="relative bg-cover bg-no-repeat bg-center py-20 md:py-40  mb-20"
-  style={{ backgroundImage: `url(${bgImage.src})` }}
->
-    {/* Dark overlay (only in dark mode) */}
-  <div className="absolute inset-0 dark:bg-black/50"></div>
+      className="relative bg-cover bg-no-repeat bg-center py-20 md:py-40  mb-20"
+      style={{ backgroundImage: `url(${bgImage2.src})` }}
+    >
+      {/* Dark overlay (only in dark mode) */}
+      <div className="absolute inset-0 dark:bg-[#222831]/70"></div>
+      <div className="absolute bottom-0 w-full h-32 bg-gradient-to-b from-transparent via-gray-50/50 to-gray-100  dark:from-transparent dark:via-[#222831]/80 dark:to-[#222831]"></div>
 
       <div className="w-[90vw] relative z-10 main-container  grid place-items-center">
         <div className="lg:grid grid-cols-2 flex flex-col-reverse gap-7 items-center">
@@ -26,13 +27,14 @@ const Hero = () => {
               Hi! I am Mandip, a
             </h5>
             <p className="text-3xl lg:text-5xl font-bold capitalize mt-2 text-[#00ADB5]">
-               Frontend-Focused Full Stack Developer
+              Frontend-Focused Full Stack Developer
             </p>
             <p className="text-gray-700 dark:text-gray-200 text-base my-6">
-              I&apos;m a passionate Full Stack Developer with 3+ years of experience
-              crafting visually stunning and user-friendly websites. I
-              specialize in modern web technologies to build seamless interfaces
-              and robust backends, ensuring both aesthetics and performance.
+              I&apos;m a passionate Full Stack Developer with 3+ years of
+              experience crafting visually stunning and user-friendly websites.
+              I specialize in modern web technologies to build seamless
+              interfaces and robust backends, ensuring both aesthetics and
+              performance.
             </p>
 
             <div className="flex items-center gap-4">
