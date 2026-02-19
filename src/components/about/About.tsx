@@ -34,34 +34,50 @@ const About = () => {
             <div className="w-16 h-1 bg-[#00ADB5]"></div>
           </div>
 
-       <div className="space-y-4">
-  <p className="dark:text-gray-200 text-gray-600 text-sm md:text-base">
-    I am a <strong>Frontend-focused Full Stack Developer</strong> with over <strong>3+ years of professional experience</strong> building scalable, responsive, and accessible web applications. I specialize in <strong>React.js, Next.js, Tailwind CSS, and Redux Toolkit</strong>, translating designs into high-quality, production-ready interfaces.
-  </p>
-  <p className="dark:text-gray-200 text-gray-600 text-sm md:text-base">
-    On the backend, I have hands-on experience with <strong>Laravel, Spring Boot, MySQL</strong>, and <strong>MongoDB</strong>, developing secure APIs, authentication systems, and supporting full-stack functionality when required.
-  </p>
-  <p className="dark:text-gray-200 text-gray-600 text-sm md:text-base">
-    I thrive in <strong>collaborative, Agile environments</strong>, working closely with designers, developers, and stakeholders to deliver robust digital solutions that are both visually appealing and highly functional.
-  </p>
-  <p className="dark:text-gray-200 text-gray-600 text-sm md:text-base">
-    <strong>Let’s build something amazing together!</strong>
-  </p>
-</div>
+          <div className="space-y-4">
+            <p className="dark:text-gray-200 text-gray-600 text-sm md:text-base">
+              I am a <strong>Frontend-focused Full Stack Developer</strong> with
+              over <strong>3+ years of professional experience</strong> building
+              scalable, responsive, and accessible web applications. I
+              specialize in{" "}
+              <strong>
+                React.js, Next.js, Tailwind CSS, and Redux Toolkit
+              </strong>
+              , translating designs into high-quality, production-ready
+              interfaces.
+            </p>
+            <p className="dark:text-gray-200 text-gray-600 text-sm md:text-base">
+              On the backend, I have hands-on experience with{" "}
+              <strong>Laravel, Spring Boot, MySQL</strong>, and{" "}
+              <strong>MongoDB</strong>, developing secure APIs, authentication
+              systems, and supporting full-stack functionality when required.
+            </p>
+            <p className="dark:text-gray-200 text-gray-600 text-sm md:text-base">
+              I thrive in <strong>collaborative, Agile environments</strong>,
+              working closely with designers, developers, and stakeholders to
+              deliver robust digital solutions that are both visually appealing
+              and highly functional.
+            </p>
+            <p className="dark:text-gray-200 text-gray-600 text-sm md:text-base">
+              <strong>Let’s build something amazing together!</strong>
+            </p>
+          </div>
 
           <div className="flex items-center gap-6">
-            <Link href="/mandiptamang.pdf" passHref>
-              <a
-                download="resume.pdf"
-                className="px-5 py-2 font-medium bg-[#00ADB5] text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] flex items-center gap-1"
-              >
-                <FaDownload className="text-xl sm:text-2xl" />
-                <span className="text-base md:text-lg font-semibold">
-                  Resume
-                </span>
-              </a>
+            <Link
+              href="/mandiptamang.pdf"
+              download
+              aria-label="Download Resume"
+              className="group inline-flex items-center gap-2 px-5 py-2.5
+             font-semibold text-white bg-[#00ADB5]
+             shadow-[3px_3px_0px_#000]
+             transition-all duration-200 ease-in-out
+             hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]
+             focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00ADB5]"
+            >
+              <FaDownload className="text-xl sm:text-2xl transition-transform group-hover:scale-110" />
+              <span className="text-base md:text-lg">Resume</span>
             </Link>
-
             <button className={pathname === "/about" ? "hidden" : "none"}>
               <Link
                 href="/about"
