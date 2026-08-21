@@ -1,8 +1,8 @@
-import { CiHome } from 'react-icons/ci'
-import { BsPersonVcard } from 'react-icons/bs'
-import { IoLogoJavascript } from 'react-icons/io5'
-import { TbBrandNextjs } from 'react-icons/tb'
-import { IoIosContact } from 'react-icons/io'
+import { CiHome } from "react-icons/ci";
+import { BsPersonVcard } from "react-icons/bs";
+import { IoLogoJavascript } from "react-icons/io5";
+import { TbBrandNextjs } from "react-icons/tb";
+import { IoIosContact } from "react-icons/io";
 import {
   SiTypescript,
   SiTailwindcss,
@@ -10,8 +10,8 @@ import {
   SiRedux,
   SiMongodb,
   SiMysql,
-  SiLaravel
-} from 'react-icons/si'
+  SiLaravel,
+} from "react-icons/si";
 import {
   FaProjectDiagram,
   FaFacebookSquare,
@@ -24,21 +24,21 @@ import {
   FaCss3,
   FaGitAlt,
   FaEnvelope,
-} from 'react-icons/fa'
+} from "react-icons/fa";
 // import { MdMiscellaneousServices } from 'react-icons/md'
 
 export const headerData = [
   {
-    title: 'home',
+    title: "home",
     id: 1,
     icon: CiHome,
-    link: '/',
+    link: "/",
   },
   {
-    title: 'about',
+    title: "about",
     id: 2,
     icon: BsPersonVcard,
-    link: '/about',
+    link: "/about",
   },
   // {
   //   title: 'service',
@@ -47,285 +47,266 @@ export const headerData = [
   //   link: '/service',
   // },
   {
-    title: 'portfolio',
+    title: "portfolio",
     id: 4,
     icon: FaProjectDiagram,
-    link: '/portfolio',
+    link: "/portfolio",
   },
   {
-    title: 'contact',
+    title: "contact",
     id: 5,
     icon: IoIosContact,
-    link: '/contact',
+    link: "/contact",
   },
-]
+];
 
 export const iconData = [
   {
-    title: 'Facebook',
+    title: "Facebook",
     id: 1,
     icon: FaFacebookSquare,
-    link: 'https://www.facebook.com/mandip.tamang.904/',
+    link: "https://www.facebook.com/mandip.tamang.904/",
   },
   {
-    title: 'Instagram',
+    title: "Instagram",
     id: 2,
     icon: FaInstagram,
-    link: 'https://www.instagram.com/mandiptamang125/',
+    link: "https://www.instagram.com/mandiptamang125/",
   },
   {
-    title: 'GitHub',
+    title: "GitHub",
     id: 3,
     icon: FaGithub,
-    link: 'https://github.com/mandiptmg',
+    link: "https://github.com/mandiptmg",
   },
   {
-    title: 'LinkedIn',
+    title: "LinkedIn",
     id: 4,
     icon: FaLinkedin,
-    link: 'https://www.linkedin.com/in/mandip-tamang',
+    link: "https://www.linkedin.com/in/mandip-tamang",
   },
   {
-    title: 'Gmail',
+    title: "Gmail",
     id: 5,
     icon: FaEnvelope,
-    link: 'mailto:mandiptamang159@gmail.com',
+    link: "mailto:mandiptamang159@gmail.com",
   },
-]
+];
 
 export const portfolioItems = [
   {
     id: 1,
-    title: 'React',
+    title: "React",
     icon: FaReact,
-    description: 'Built a dynamic web application using React.',
+    description: "Built a dynamic web application using React.",
   },
   {
     id: 2,
-    title: 'HTML5',
+    title: "HTML5",
     icon: FaHtml5,
-    description: 'Designed and coded a responsive website using HTML5.',
+    description: "Designed and coded a responsive website using HTML5.",
   },
   {
     id: 3,
-    title: 'CSS3',
+    title: "CSS3",
     icon: FaCss3,
-    description: 'Styled web pages with CSS3 for improved visual presentation.',
+    description: "Styled web pages with CSS3 for improved visual presentation.",
   },
   {
     id: 4,
-    title: 'JavaScript',
+    title: "JavaScript",
     icon: IoLogoJavascript,
-    description: 'Implemented interactive features using JavaScript.',
+    description: "Implemented interactive features using JavaScript.",
   },
   {
     id: 5,
-    title: 'Next.js',
+    title: "Next.js",
     icon: TbBrandNextjs,
-    description: 'Developed a Next.js application for server-side rendering.',
+    description: "Developed a Next.js application for server-side rendering.",
   },
   {
     id: 6,
-    title: 'TypeScript',
+    title: "TypeScript",
     icon: SiTypescript,
-    description: 'Utilized TypeScript for type-safe JavaScript development.',
+    description: "Utilized TypeScript for type-safe JavaScript development.",
   },
   {
     id: 7,
-    title: 'Tailwind CSS',
+    title: "Tailwind CSS",
     icon: SiTailwindcss,
     description:
-      'Styled components with Tailwind CSS for rapid UI development.',
+      "Styled components with Tailwind CSS for rapid UI development.",
   },
   {
     id: 8,
-    title: 'Framer Motion',
+    title: "Framer Motion",
     icon: SiFramer,
-    description: 'Created animations and interactive UIs with Framer Motion.',
+    description: "Created animations and interactive UIs with Framer Motion.",
   },
   {
     id: 9,
-    title: 'Redux Toolkit',
+    title: "Redux Toolkit",
     icon: SiRedux,
-    description: 'Managed application state with Redux Toolkit.',
+    description: "Managed application state with Redux Toolkit.",
   },
   {
     id: 10,
-    title: 'Git',
+    title: "Git",
     icon: FaGitAlt,
-    description: 'Utilized version control with Git for project management.',
+    description: "Utilized version control with Git for project management.",
   },
   {
     id: 11,
-    title: 'GitHub',
+    title: "GitHub",
     icon: FaGithub,
-    description: 'Collaborated on projects and hosted repositories on GitHub.',
+    description: "Collaborated on projects and hosted repositories on GitHub.",
   },
   {
     id: 12,
-    title: 'Mongodb',
+    title: "Mongodb",
     icon: SiMongodb,
     description:
-      'Integrated Mongodb for real-time database, auth, storage, enabling seamless dev.',
+      "Integrated Mongodb for real-time database, auth, storage, enabling seamless dev.",
   },
   {
-  id: 13,
-  title: 'Laravel',
-  icon: SiLaravel, 
-  description:
-    'Utilized Laravel for robust backend development, offering RESTful APIs and efficient routing.',
-},
-{
-  id: 14,
-  title: 'MySQL',
-  icon: SiMysql,
-  description:
-    'Leveraged MySQL for reliable data storage and management, ensuring optimal performance and security.',
-}
-]
+    id: 13,
+    title: "Laravel",
+    icon: SiLaravel,
+    description:
+      "Utilized Laravel for robust backend development, offering RESTful APIs and efficient routing.",
+  },
+  {
+    id: 14,
+    title: "MySQL",
+    icon: SiMysql,
+    description:
+      "Leveraged MySQL for reliable data storage and management, ensuring optimal performance and security.",
+  },
+];
 
-import amazon from './../public/project/amazon.png'
-import gym from './../public/project/himalayanFit.png'
-import journey from './../public/project/journey.png'
-import falcon from './../public/project/falcon.png'
-import furniVorgue from './../public/project/furniVorgue.png'
-import refract from './../public/project/refract.png'
-import moai from './../public/project/moai.png'
-import portfolio from './../public/project/portfolio.png'
-import csoft from './../public/project/csoft.png'
-import luxeNest from './../public/project/luxeNest.png'
-import excellence from './../public/project/excellence.png'
+import amazon from "./../public/project/amazon.png";
+import gym from "./../public/project/himalayanFit.png";
+import journey from "./../public/project/journey.png";
+import falcon from "./../public/project/falcon.png";
+import furniVorgue from "./../public/project/furniVorgue.png";
+import refract from "./../public/project/refract.png";
+import moai from "./../public/project/moai.png";
+import portfolio from "./../public/project/portfolio.png";
+import csoft from "./../public/project/csoft.png";
+import luxeNest from "./../public/project/luxeNest.png";
+import excellence from "./../public/project/excellence.png";
+import camera from "./../public/project/camera-portfolio.png";
+
 
 export const projectData = [
   {
     id: 0,
-    title: 'Excellence Code Marketing',
-    img: excellence,
-    link: 'https://excellence-code-llc.vercel.app/',
+    title: "Amazon Clone",
+    img: amazon,
+    link: "https://next-amazon-beta.vercel.app",
   },
   {
     id: 1,
-    title: 'LuxeNest',
-    img: luxeNest,
-    link: 'https://luxe-nest.vercel.app/',
+    title: "Refract",
+    img: refract,
+    link: "https://refract-coral.vercel.app/",
   },
   {
     id: 2,
-    title: 'Creation Soft Nepal',
-    img: csoft,
-    link: 'https://creationsoftnepal.com.np/',
+    title: "Moai",
+    img: moai,
+    link: "https://moai-six.vercel.app/",
   },
   {
     id: 3,
-    title: 'FurniVorgue',
-    img: furniVorgue,
-    link: 'https://furniVogue.vercel.app',
+    title: "Portfolio",
+    img: portfolio,
+    link: "https://karmalama.vercel.app/",
   },
   {
     id: 4,
-    title: 'Falcon Company',
-    img: falcon,
-    link: 'https://falcon-car.vercel.app',
+    title: "HimalayanFitness Gym",
+    img: gym,
+    link: "https://himalayan-gym.vercel.app",
   },
   {
     id: 5,
-    title: 'Journey',
+    title: "Journey",
     img: journey,
-    link: 'https://journey-travel.vercel.app',
+    link: "https://journey-travel.vercel.app",
   },
   {
     id: 6,
-    title: 'HimalayanFitness Gym',
-    img: gym,
-    link: 'https://himalayan-gym.vercel.app',
+    title: "Falcon Company",
+    img: falcon,
+    link: "https://falcon-car.vercel.app",
   },
   {
     id: 7,
-    title: 'Portfolio',
-    img: portfolio,
-    link: 'https://karmalama.vercel.app/',
+    title: "FurniVorgue",
+    img: furniVorgue,
+    link: "https://furniVogue.vercel.app",
   },
   {
     id: 8,
-    title: 'Moai',
-    img: moai,
-    link: 'https://moai-six.vercel.app/',
+    title: "Creation Soft Nepal",
+    img: csoft,
+    link: "https://creationsoftnepal.com.np/",
   },
   {
     id: 9,
-    title: 'Refract',
-    img: refract,
-    link: 'https://refract-coral.vercel.app/',
+    title: "LuxeNest",
+    img: luxeNest,
+    link: "https://luxe-nest.vercel.app/",
   },
   {
     id: 10,
-    title: 'Amazon Clone',
-    img: amazon,
-    link: 'https://next-amazon-beta.vercel.app',
+    title: "Excellence Code Marketing",
+    img: excellence,
+    link: "https://excellence-code-llc.vercel.app/",
+  },
+   {
+    id: 11,
+    title: "Camera Portfolio",
+    img: camera,
+    link: "https://camera-portfolio-pi.vercel.app/",
   },
 ];
 
-
-
-
 export const experiences = [
   {
-    company: "Excellence Code Marketing LLC, Dubai",
     role: "Frontend Developer (Full-Stack Support)",
+    company: "Excellence Code Marketing LLC, Business Bay, Dubai",
     period: "Jul 2025 – Present",
     responsibilities: [
-      "Developed and maintained 30+ reusable, responsive UI components using React.js, SCSS, and Tailwind CSS.",
-      "Collaborated with UI/UX designers and backend engineers to deliver 7+ production-ready features.",
-      "Converted Figma designs into scalable and maintainable frontend architecture with consistent UI standards.",
-      "Performed code reviews and refactored legacy components, reducing code duplication by approximately 35%.",
-      "Integrated RESTful APIs and JWT-based authentication to support secure full-stack functionality.",
-      "Ensured cross-browser compatibility and mobile responsiveness across all major devices.",
+      "Developed e-commerce, corporate, and marketing websites using React.js, Redux-Toolkit, JavaScript, SCSS, libraries, and Tailwind CSS.",
+      "Built key e-commerce features including product catalogs, filtering, cart, checkout, and order tracking.",
+      "Developed 30+ reusable UI components and integrated RESTful APIs for products, users, orders, and authentication.",
+      "Implemented JWT authentication, protected routes, and role-based access control for secure applications.",
+      "Improved code quality by reducing duplication by 35% and optimizing performance, responsiveness, and cross-browser compatibility.",
     ],
   },
   {
-    company: "Creation Soft Nepal, Kathmandu",
-    role: "Frontend Developer (Full-Stack as Required)",
-    period: "Jun 2023 – Feb 2025",
+    role: "Frontend Developer (Full-Stack)",
+    company: "Creation Soft Nepal, Kathmandu, Nepal",
+    period: "Jun 2024 – Feb 2025",
     responsibilities: [
-      "Led frontend development for multiple client-facing web applications using React.js and Tailwind CSS.",
-      "Integrated frontend interfaces with Laravel-based backend services and REST APIs.",
-      "Optimized application performance using component reuse, lazy loading, and efficient state management.",
-      "Collaborated with project managers and QA teams to deliver stable, production-ready releases.",
-      "Developed secure, role-based inventory management dashboards using React.js and Laravel.",
-      "Implemented JWT and OAuth2 authentication to support multi-role access control (Admin, Staff, Manager).",
+      "Developed client-facing web applications using React.js, JavaScript, Tailwind CSS, and Laravel.",
+      "Integrated RESTful APIs and Laravel backend services to deliver dynamic and data-driven applications.",
+      "Built reusable components, responsive interfaces, and role-based dashboards for business applications.",
+      "Improved application performance using lazy loading, code splitting, and efficient state management.",
+      "Collaborated with project managers and QA teams to deliver reliable features and production releases.",
     ],
   },
   {
-    company: "Creation Soft Nepal",
-    role: "Key Project – Inventory Management System",
-    period: "2024",
-    responsibilities: [
-      "Developed a secure, role-based inventory management dashboard using React.js and Laravel.",
-      "Implemented JWT and OAuth2 authentication to enable multi-role access (Admin, Staff, Manager).",
-      "Designed modular component architecture to improve maintainability and long-term scalability.",
-      "Enhanced data visualization and reporting features to support business decision-making.",
-    ],
-  },
-  {
-    company: "Creation Soft Nepal",
-    role: "Key Project – Dynamic Company Website with CMS",
-    period: "2024",
-    responsibilities: [
-      "Built a responsive corporate website with a custom CMS using Laravel Blade and React.js.",
-      "Designed and implemented an admin dashboard for non-technical content editors.",
-      "Applied SEO best practices, image optimization, and performance tuning to improve page load speed.",
-      "Ensured accessibility standards and mobile-first design principles across all pages.",
-    ],
-  },
-  {
-    company: "Creation Soft Nepal",
     role: "Frontend Developer Intern",
-    period: "Mar 2023 – May 2023",
+    company: "Creation Soft Nepal",
+    period: "Mar 2024 – May 2024",
     responsibilities: [
-      "Developed responsive UI components using React.js and Tailwind CSS.",
-      "Improved application performance through code splitting and lazy loading techniques.",
-      "Contributed to an internal UI component library to improve design consistency and development speed.",
-      "Fixed UI bugs and participated in team code reviews to enhance overall code quality.",
+      "Developed reusable and responsive UI components using React.js and Tailwind CSS.",
+      "Improved application performance through code splitting and lazy loading.",
+      "Contributed to an internal React component library for consistent UI development.",
+      "Fixed UI issues, tested features, and participated in code reviews.",
     ],
   },
 ];

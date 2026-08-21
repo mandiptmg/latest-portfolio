@@ -34,34 +34,39 @@ const About = () => {
             <div className="w-16 h-1 bg-[#00ADB5]"></div>
           </div>
 
-          <div className="space-y-4">
-            <p className="dark:text-gray-200 text-gray-600 text-sm md:text-base">
-              I am a <strong>Frontend-focused Full Stack Developer</strong> with
-              over <strong>3+ years of professional experience</strong> building
-              scalable, responsive, and accessible web applications. I
-              specialize in{" "}
-              <strong>
-                React.js, Next.js, Tailwind CSS, and Redux Toolkit
-              </strong>
-              , translating designs into high-quality, production-ready
-              interfaces.
-            </p>
-            <p className="dark:text-gray-200 text-gray-600 text-sm md:text-base">
-              On the backend, I have hands-on experience with{" "}
-              <strong>Laravel, Spring Boot, MySQL</strong>, and{" "}
-              <strong>MongoDB</strong>, developing secure APIs, authentication
-              systems, and supporting full-stack functionality when required.
-            </p>
-            <p className="dark:text-gray-200 text-gray-600 text-sm md:text-base">
-              I thrive in <strong>collaborative, Agile environments</strong>,
-              working closely with designers, developers, and stakeholders to
-              deliver robust digital solutions that are both visually appealing
-              and highly functional.
-            </p>
-            <p className="dark:text-gray-200 text-gray-600 text-sm md:text-base">
-              <strong>Let’s build something amazing together!</strong>
-            </p>
-          </div>
+         <div className="space-y-4">
+  <p className="dark:text-gray-200 text-gray-600 text-sm md:text-base">
+    I’m a <strong>Frontend-focused Full-Stack Developer</strong> with{" "}
+    <strong>3+ years of professional experience</strong> building
+    responsive, scalable, and user-friendly web applications. I
+    specialize in{" "}
+    <strong>
+      React.js, Next.js, Redux Toolkit, Tailwind CSS, and JavaScript
+    </strong>
+    , turning designs and ideas into clean, production-ready interfaces.
+  </p>
+
+  <p className="dark:text-gray-200 text-gray-600 text-sm md:text-base">
+    I also have hands-on experience with{" "}
+    <strong>Laravel, Spring Boot, REST APIs, MySQL, and MongoDB</strong>,
+    including JWT and OAuth2 authentication, protected routes, and
+    role-based access control. I enjoy supporting backend functionality
+    when a project requires a full-stack approach.
+  </p>
+
+  <p className="dark:text-gray-200 text-gray-600 text-sm md:text-base">
+    I’ve worked on <strong>e-commerce platforms, corporate websites,
+    CMS systems, and business applications</strong>, focusing on
+    reusable components, performance optimization, responsive design,
+    and maintainable code.
+  </p>
+
+  <p className="dark:text-gray-200 text-gray-600 text-sm md:text-base">
+    I enjoy working in <strong>collaborative Agile teams</strong> and
+    turning real-world requirements into reliable digital experiences.
+    <strong> Let’s build something great together!</strong>
+  </p>
+</div>
 
           <div className="flex items-center gap-6">
             <Link
